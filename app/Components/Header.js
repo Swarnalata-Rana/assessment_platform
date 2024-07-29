@@ -1,4 +1,5 @@
 import React from 'react'
+import Pagination from './Pagination';
 
 const Header = () => {
     return (
@@ -11,6 +12,7 @@ const Header = () => {
                 <div className='headerDiv2'>
                     <div className='startTest'>Start Test</div>
                     <p>Score</p>
+                    {/* <Pagination/> */}
                 </div>
             </div>
         </>

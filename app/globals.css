@@ -45,6 +45,9 @@
   line-height: 160%;
   color: var(--Dark-b, #4C4B49);
 }
+.pagination{
+  display: none;
+}
 
 .headerDiv2 p {
   margin-left: 20px;
@@ -298,8 +301,61 @@
     height: 100px;
   }
 }
+/* pagination */
+.pagination {
+  display: inline-block;
+  margin-top: 20px;
+}
 
+.pagination a {
+  color: black;
+  float: left;
+  padding: 10px 14px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+  border-radius: 50%; /* Make the links circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
 
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: black;
+  color: white;
+}
+
+/* Arrow icons styling */
+.pagination .prev::before,
+.pagination .next::after {
+  font-size: 15px; /* Increase the size of arrow symbols */
+}
+
+.pagination .prev {
+  /* content: "←"; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FEEEB4;
+}
+
+.pagination .next {
+  /* content: "→"; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FEEEB4;
+
+}
 /* footer */
 .footerMainDiv {
   height: 171px;

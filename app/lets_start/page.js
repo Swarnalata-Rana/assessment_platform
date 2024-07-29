@@ -1,10 +1,11 @@
 import React from 'react'
+import Pagination from '../Components/Pagination';
 
 const page = () => {
   return (
     <>
-    <div>
-        page
+    <div className='container'>
+      <Pagination/>
     </div>
     </>
   )

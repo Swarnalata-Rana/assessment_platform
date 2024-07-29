@@ -6,7 +6,7 @@ import Footer from './Footer';
 const HomePage = () => {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <div className='hederDivmain'>
                 <h2 className='MCQh2'>MCQ Test Portal</h2>
                 <div className='whiteBox'>
@@ -50,7 +50,7 @@ const HomePage = () => {
                 </div>
                 <div className='gapDiv'></div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }
