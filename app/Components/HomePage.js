@@ -11,12 +11,10 @@ const HomePage = () => {
                 <div className='whiteBox'>
                     <h4 className='instructions'>Instructions</h4>
                     <div className='maindivUi'>
-                        <p className='paragrap'>
-                            Please read the instructions carefully before you begin:
-                        </p>
+                        <p className='paragrap'>Please read the instructions carefully before you begin:</p>
                         <div className='maindivUi1'>
                             <ui className="uiTag">
-                                <li>
+                                <li className=''>
                                     Timing: The test is timed. You have [specified time] minutes to complete all questions
                                 </li>
                                 <li>
