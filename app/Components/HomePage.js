@@ -6,6 +6,9 @@ import Footer from './Footer';
 const HomePage = () => {
     return (
         <>
+            <div className='container'>
+                <Header />
+            </div>
             <div className='hederDivmain'>
                 <h2 className='MCQh2'>MCQ Test Portal</h2>
                 <div className='whiteBox'>
