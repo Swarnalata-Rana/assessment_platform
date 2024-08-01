@@ -9,9 +9,13 @@ const page = () => {
             </div>
             <div className='container'>
                 <div className='successfullyMainDiv'>
+                    <div className='gapDiv4'></div>
+
                     <div className='whiteBoxSuccessfully'>
                         <div className='maindivSumnited'>
-                            <img src='' />
+                            <div className='rightDivTag'>
+                                <img src='right.png' />
+                            </div>
                             <div className='successfullyDiv'>Successfully Sumbitted</div>
                             <h6>Thank you for completing the test! </h6>
                             <p>

@@ -298,7 +298,6 @@
 /* pagination */
 .mainDivPagination {
   background-color: white;
-  /* border: 1px solid rgb(60, 67, 165); */
 }
 
 .mainDivPagination1 {
@@ -308,21 +307,16 @@
   margin: auto;
   width: 960px;
   height: 72px;
-  /* border: 1px solid red; */
-
 }
 
 .paginationMain {
   display: flex;
   align-items: center;
-  /* border: 1px solid rgb(30, 255, 0); */
-
 }
 
 .pagination {
   display: inline-block;
   align-items: center;
-  /* border: 1px solid red; */
 }
 
 .pagination a {
@@ -341,12 +335,6 @@
   height: 40px;
 }
 
-/* .pagination a.active {
-  background-color: #4CAF50;
-  color: white;
-  border: 1px solid #4CAF50;
-} */
-
 .pagination a:hover:not(.active) {
   background-color: black;
   color: white;
@@ -356,28 +344,19 @@
 .pagination .prev::before,
 .pagination .next::after {
   font-size: 15px;
-  /* Increase the size of arrow symbols */
-}
-
-.pagination {
-  /* align-items: center; */
 }
 
 .pagination .prev {
-  /* content: "←"; */
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   background-color: #FEEEB4;
 }
 
 .pagination .next {
-  /* content: "→"; */
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #FEEEB4;
-
 }
 
 .submitDiv {
@@ -385,12 +364,10 @@
   padding: 16px 35px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   border-radius: 4px;
   border: 2px solid #F4D150;
   background: #FEEEB4;
   box-shadow: 0px 4px 7px 0px #B3AE9C;
-  /* margin-top: 7px; */
   width: 130px;
   height: 54px;
   margin-left: 30px;
@@ -408,6 +385,129 @@
 /* Assessment */
 .filterinside {
   width: 284px;
+  /* border: 1px solid red; */
+  margin-top: 150px;
+  height: 375px;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px dashed #777671;
+  background: #F9F7F2;
+}
+
+.filter {
+  color: #4C4B49;
+  font-family: "Inria Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: auto;
+  width: 197px;
+  margin-top: 36px;
+}
+
+.questionScore {
+  margin: auto;
+  width: 206px;
+  margin-top: 36px;
+  color: #1F1E1C;
+  font-family: "Inria Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.questionsattempted {
+  color: #1F1E1C;
+  font-family: "Inria Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 206px;
+  margin: auto;
+  margin-top: 48px;
+}
+
+.paginationfilterbox {
+  width: 220px;
+  margin: 16px auto 0;
+}
+
+.paginationfilterbox a {
+  padding: 10px 12px;
+  display: inline-block;
+  margin: 0 5px;
+  border: 1px solid #F4D150;
+  background: #FEEEB4;
+  color: #1F1E1C;
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 4px;
+
+}
+
+.paginationfilterbox a:hover {
+  color: white;
+  background-color: black;
+  /* Optional: slightly darker background on hover */
+}
+
+
+.allattemtedDiv {
+  display: flex;
+  width: 206px;
+  margin: auto;
+  margin-top: 16px;
+  justify-content: space-between;
+}
+
+.all40 {
+  display: flex;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 54px;
+  border: 1px solid #F4D150;
+  background: #FEEEB4;
+}
+
+.attemted3 {
+  display: flex;
+  padding: 6px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 54px;
+  border: 1px solid #F4D150;
+  background: #FEEEB4;
+}
+
+.Unattempted37 {
+  display: flex;
+  padding: 6px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 54px;
+  border: 1px solid #F4D150;
+  background: #FEEEB4;
+  width: 206px;
+  margin: auto;
+}
+
+.all40:hover,
+.attemted3:hover,
+.Unattempted37:hover {
+  background-color: black;
+  color: white;
 }
 
 .secondPageMainDiv {
@@ -422,7 +522,7 @@
 }
 
 .Question1 {
-  color: var(--Dark-a, #1F1E1C);
+  color: #1F1E1C;
   font-family: "Inria Sans";
   font-size: 16px;
   font-style: normal;
@@ -432,7 +532,7 @@
 }
 
 .score1 {
-  color: var(--Dark-a, #1F1E1C);
+  color: #1F1E1C;
   text-align: right;
   font-family: Inter;
   font-size: 14px;
@@ -452,7 +552,7 @@
   width: 460px;
   margin: auto;
   color: #1F1E1C;
-  color: var(--Dark-a, #1F1E1C);
+  color: #1F1E1C;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -463,12 +563,10 @@
 .mainQuestionDiv1 {
   display: flex;
   justify-content: space-between;
-  border: 1px solid rgb(141, 17, 52);
   width: 560px;
 }
 
 .mainQuestionDivWhiteBox {
-  border: 1px solid red;
   background-color: white;
   width: 560px;
   margin: auto;
@@ -516,7 +614,8 @@
   margin-right: 10px;
   /* Adds space between radio button and label */
 }
-.gapAssessment{
+
+.gapAssessment {
   height: 40px;
 }
 
@@ -525,18 +624,45 @@
   background-color: #EBE9E6;
 }
 
+.gapDiv4 {
+  height: 103px;
+}
+
+/* .rightDivTag {
+  width: 28px;
+  height: 28px;
+  margin: auto;
+  flex-shrink: 0;
+  background-color: #88BE37;
+  margin-top: 65px;
+  overflow: hidden;
+  border-radius: 50%;
+} */
+.rightDivTag {
+  width: 28px;
+  height: 28px;
+  margin: auto;
+  flex-shrink: 0;
+  background-color: #88BE37;
+  margin-top: 65px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightDivTag img {
+  width: 14px; /* This is the size of the image */
+  height: 10px; /* Set height to ensure it remains square */
+}
+
 .whiteBoxSuccessfully {
   margin: auto;
   width: 705px;
-  /* margin-bottom: -103px; */
   background-color: white;
-  border: 1px solid red;
+  border: 1px solid white;
 }
-
-/* .maindivSumnited {
-  width: 319px;
-  margin: auto;
-} */
 
 .successfullyDiv {
   color: var(--Dark-a, #1F1E1C);
@@ -547,7 +673,7 @@
   line-height: 120%;
   width: 265px;
   margin: auto;
-  margin-top: 115px;
+  margin-top: 22px;
   letter-spacing: -0.48px;
 }
 
@@ -593,6 +719,7 @@
 .scoreATag {
   text-decoration: none;
   display: inline-block;
+  color: #1F1E1C;
 }
 
 .gapDiv2 {
