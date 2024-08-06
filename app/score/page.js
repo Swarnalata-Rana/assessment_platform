@@ -4,8 +4,10 @@ import Header from '../Components/Header';
 const page = () => {
     return (
         <>
-            <div className='container'>
+            <div className=''>
                 <Header />
+            </div>
+            <div className=''>
                 {/* <div className='mainDivPagination1'>
                     <div className='headerDivP2'>
                         <img className='logoImgP2' src='LogoGrp.png' />
@@ -18,22 +20,24 @@ const page = () => {
                 </div> */}
                 <div className='mainScoreDiv'>
                     <div className='gapDiv0'></div>
-                    <div className='blackDivBox'>
-                        <div className=''>
-                            <p>35/40</p>
-                            <p>Your Scored</p>
-                        </div>
-                        <div className=''>
-                            <p><img src='exclamation.png' /></p>
-                            <p>Unattempted: 3</p>
-                        </div>
-                        <div className=''>
-                            <p><img src='Check.png' /></p>
-                            <p>Correct: 35</p>
-                        </div>
-                        <div className=''>
-                            <p><img src='wrong.png' /></p>
-                            <p>Wrong: 2</p>
+                    <div className='blackDivBox0'>
+                        <div className='blackDivBox'>
+                            <div className=''>
+                                <p className='Tag35'>35/40</p>
+                                <p className='yourScor'>Your Scored</p>
+                            </div>
+                            <div className=''>
+                                <p><img src='exclamation.png' /></p>
+                                <p>Unattempted: 3</p>
+                            </div>
+                            <div className=''>
+                                <p><img src='Check.png' /></p>
+                                <p>Correct: 35</p>
+                            </div>
+                            <div className=''>
+                                <p><img src='wrong.png' /></p>
+                                <p>Wrong: 2</p>
+                            </div>
                         </div>
                     </div>
                     <div className='checkYourAns'>CHECK YOUR ANSWERS</div>
@@ -47,6 +51,7 @@ const page = () => {
                         <div className='plusImg'>
                             <img src='Plus.png' />
                         </div>
+
                     </div>
                     <div className='lineScore1'></div>
                     <div className='scoreCurrectMaoinDiv'>

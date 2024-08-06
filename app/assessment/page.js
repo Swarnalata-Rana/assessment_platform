@@ -5,10 +5,10 @@ const page = () => {
     return (
         <>
             <div className=''>
-                <div className='container'>
+                <div className=''>
                     <Pagination />
                 </div>
-                <div className='container'>
+                <div className=''>
                     <div className='secondPageMainDiv'>
                         <div className='secondPageMainDiv1'>
                             <div className='filterinside'>

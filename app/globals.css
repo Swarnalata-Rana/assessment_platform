@@ -28,10 +28,6 @@
   margin-left: 15px;
 }
 
-/* .pagination {
-  display: none;
-} */
-
 .headerDiv2 p {
   margin-left: 20px;
   font-family: Inter;
@@ -95,7 +91,7 @@
 }
 
 .uiTag {
-  color: var(--Dark-b, #4C4B49);
+  color: #4C4B49;
   font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -177,6 +173,11 @@
 }
 
 @media (max-width: 495px) {
+
+  .container {
+    width: 360px;
+    margin: auto;
+  }
 
   .headerDiv {
     width: 360px;
@@ -274,6 +275,99 @@
     margin-bottom: 40px;
   }
 
+  /* .successfullyPage */
+  .successfullyMainDiv {
+    width: 360px;
+    margin: auto;
+  }
+
+  .whiteBoxSuccessfully {
+    /* width: 320px; */
+    /* margin: auto; */
+    background-color: white;
+
+  }
+
+  .whiteBoxSuccessfully1 {
+    /* border: 1px solid red; */
+    width: 360px;
+  }
+
+  .rightDivTag {
+    width: 28px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .successfullyDiv {
+    width: 320px;
+    margin: auto;
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .maindivSumnited h6,
+  .maindivSumnited p {
+    width: 319px;
+    margin: auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .ckeckScore {
+    width: auto;
+    padding: 12px 24px;
+    margin-top: 40px;
+  }
+
+  /* ScorePagemediaquery */
+  .mainScoreDiv {
+    width: 360px;
+  }
+
+  .blackDivBox {
+    width: 320px;
+  }
+
+  .blackDivBox0 {
+
+  }
+  .yourScored{
+
+  }
+  .checkYourAns{
+    color: var(--Dark-a, #1F1E1C);
+    font-family: "Inria Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .lineScore{
+    width: 320px;
+    height: 2px;
+  }
+  .scoreCurrectMaoinDiv{
+    display: flex;
+    width: 321px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .right10PlusMainDiv{
+
+  }
+  .rightImg{
+
+  }
+.lineScore1{
+  display: flex;
+width: 321px;
+flex-direction: column;
+align-items: flex-start;
+gap: 20px;
+}
+  /* footer */
   .gapDiv {
     height: 100px;
   }
@@ -282,18 +376,97 @@
     width: 360px;
     margin: auto;
   }
-
-  /* .footer{
-    width: 289px;
-    margin: auto;
-    font-size: 18px;
-  }
-  .footerP{
-    width: 289px;
-    margin: auto;
-    font-size: 14px;
-  } */
 }
+
+
+
+/* .successfullPage */
+/* Default styles for larger screens */
+.successfullyMainDiv {
+  background-color: #b87818;
+}
+
+.gapDiv4 {
+  height: 103px;
+}
+
+.rightDivTag {
+  width: 28px;
+  height: 28px;
+  margin: auto;
+  margin-top: 65px;
+}
+
+.whiteBoxSuccessfully {
+  margin: auto;
+  width: 705px;
+  background-color: white;
+  /* border: 1px solid rgb(178, 16, 16); */
+}
+
+.successfullyDiv {
+  color: var(--Dark-a, #1F1E1C);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  width: 265px;
+  margin: auto;
+  margin-top: 22px;
+  letter-spacing: -0.48px;
+}
+
+.maindivSumnited h6 {
+  color: #000;
+  width: 319px;
+  margin: auto;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  margin-top: 36px;
+}
+
+.maindivSumnited p {
+  width: 319px;
+  margin: auto;
+  color: #000;
+  margin-top: 12px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.ckeckScore {
+  margin: auto;
+  width: 222px;
+  font-size: 18px;
+  padding: 16px 35px;
+  border-radius: 4px;
+  border: 2px solid #F4D150;
+  background: #FEEEB4;
+  box-shadow: 0px 4px 7px 0px #B3AE9C;
+  margin-bottom: 108px;
+  margin-top: 100px;
+}
+
+.scoreATag {
+  text-decoration: none;
+  display: inline-block;
+  color: #1F1E1C;
+}
+
+.gapDiv2 {
+  height: 428px;
+}
+
+
 
 /* pagination */
 .mainDivPagination {
@@ -305,7 +478,7 @@
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  width: 960px;
+  width: 1200px;
   height: 72px;
 }
 
@@ -612,7 +785,6 @@
 
 .options input[type="radio"] {
   margin-right: 10px;
-  /* Adds space between radio button and label */
 }
 
 .gapAssessment {
@@ -642,19 +814,7 @@
   width: 28px;
   height: 28px;
   margin: auto;
-  flex-shrink: 0;
-  background-color: #88BE37;
   margin-top: 65px;
-  overflow: hidden;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.rightDivTag img {
-  width: 14px;
-  height: 10px;
 }
 
 .whiteBoxSuccessfully {
@@ -741,8 +901,8 @@
   width: 625px;
   height: 165px;
   border-radius: 12px;
-  border: 1px solid var(--Dark-d, #8F887C);
-  background: var(--Dark-b, #4C4B49);
+  border: 1px solid #8F887C;
+  background: #4C4B49 ;
   display: flex;
   justify-content: center;
   color: white;
@@ -751,16 +911,31 @@
   gap: 33px;
 }
 
+.Tag35 {
+  color: #F9F7F2;
+  text-align: center;
+  font-family: Jost;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.yourScored {
+  color: #F9F7F2;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 160%;
+}
+
 .checkYourAns {
   margin: auto;
   width: 601px;
   color: #1F1E1C;
   font-family: "Inria Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
-  text-transform: uppercase;
   margin-top: 139px;
 }
 
@@ -791,7 +966,6 @@
   height: 28px;
   justify-content: center;
   align-items: center;
-  /* gap: 16px; */
 }
 
 .plusImg {

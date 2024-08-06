@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const page = () => {
   return (
     <>
-      <div className='container'>
+      <div className=''>
         <HomePage />
       </div>
     </>
