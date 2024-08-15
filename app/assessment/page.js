@@ -1,35 +1,18 @@
 import React from 'react'
-import Pagination from '../Components/Pagination';
-
+import './Assessment.css';
+import PaginationPage from './PaginationPage';
+import Filter from './Filter';
 const page = () => {
     return (
         <>
             <div className=''>
                 <div className=''>
-                    <Pagination />
+                    <PaginationPage />
                 </div>
-                <div className=''>
+                <div className='mainwidthBgcolor'>
                     <div className='secondPageMainDiv'>
                         <div className='secondPageMainDiv1'>
-                            <div className='filterinside'>
-                                <div className='filter'>FILTERS</div>
-                                <p className='questionScore'>Question Score</p>
-                                <div class="paginationfilterbox">
-                                    <a href="#">All</a>
-                                    <a href="#">10</a>
-                                    <a href="#">15</a>
-                                    <a href="#">20</a>
-                                </div>
-                                <div>
-                                    <p className='questionsattempted'>Questions Attempted</p>
-
-                                </div>
-                                <div className='allattemtedDiv'>
-                                    <p className='all40'>All(40)</p>
-                                    <p className='attemted3'>Attempted(3)</p>
-                                </div>
-                                <div className='Unattempted37'>Unattempted (37)</div>
-                            </div>
+                            <Filter />
                             <div className='mainQuestionDiv'>
                                 <div className='mainQuestionDiv1'>
                                     <h4 className='Question1'>QUESTION 1</h4>

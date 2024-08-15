@@ -1,15 +1,13 @@
 import React from 'react'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-const Pagination = () => {
+import AssessmentHeader from '../assessment/AssessmentHeader';
+const PaginationPage = () => {
     return (
         <>
             <div className='mainDivPagination'>
                 <div className='mainDivPagination1'>
-                    <div className='headerDivP2'>
-                        <img className='logoImgP2' src='LogoGrp.png' />
-                        <img className='QAdivP2' src='QA.png' />
-                    </div>
+                    <AssessmentHeader/>
                     <div className='paginationMain'>
                         <div class="pagination">
                             <a href="#" class="prev"><ArrowBackIosIcon /></a>
@@ -32,4 +30,4 @@ const Pagination = () => {
         </>
     )
 }
-export default Pagination;
+export default PaginationPage;
