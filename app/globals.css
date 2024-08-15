@@ -58,7 +58,7 @@
   /* border: 1px solid red; */
   margin: auto;
   margin-top: -25px;
-  background-color: white;
+  background-color:  #F9F7F2;
 }
 
 .instructions {
@@ -96,24 +96,24 @@
   font-size: 14px;
   font-weight: 400;
   padding: 10px;
-  list-style: none;
+  /* list-style: none; */
 }
 
 .uiTag li {
   margin-bottom: 10px;
   position: relative;
   padding-left: 25px;
-  line-height: 18px;
+  /* line-height: 18px; */
 }
 
-.uiTag li::before {
+/* .uiTag li::before {
   content: '•';
   position: absolute;
   left: 0;
   color: #4C4B49;
   font-size: 15px;
   margin-left: 10px;
-}
+} */
 
 .paragrap0 {
   color: var(--Dark-b, #4C4B49);
@@ -286,29 +286,41 @@
   }
 
   .footerMainDiv {
+    height: 171px;
+    padding: 46px 0px 68px 0px;
+    background: #4C4B49;
+    color: white;
     width: 100%;
     max-width: 360px;
     margin: auto;
     box-sizing: border-box;
-    /* Include padding and border in the element's width */
   }
 
   .footer {
+    font-size: 18px;
     text-align: center;
-    /* Center align the text for the footer */
-    /* padding: 10px 0; Add some padding for spacing */
+    color:  #F9F7F2;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
   }
 
   .footerP {
-    width: 100%;
-    max-width: 360px;
-    margin: auto;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
     text-align: center;
-    /* Center align the text */
-    /* overflow-wrap: break-word; Ensure long words break to fit */
-    /* word-break: break-word; */
-    padding: 10px 0;
-    /* Add some padding to avoid text touching the edges */
+    margin-top: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--Light-b, #F9F7F2);
+    text-align: center;
+    /* tx small */
+    font-family: "Inria Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
   }
 }
 

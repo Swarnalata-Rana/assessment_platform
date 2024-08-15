@@ -7,13 +7,13 @@ const page = () => {
             <div className=''>
                 <Header />
             </div>
-            <div className=''>
+            {/* <div className=''> */}
                 <div className='successfullyMainDiv'>
                     <div className='gapDiv4'></div>
 
                     <div className='whiteBoxSuccessfully'>
-                        <div className='whiteBoxSuccessfully1'>
-                            <div className='maindivSumnited'>
+                        {/* <div className='whiteBoxSuccessfully1'> */}
+                            <div className='maindivSuccessfully'>
                                 <div className='rightDivTag'>
                                     <img src='Check.png' />
                                 </div>
@@ -27,12 +27,12 @@ const page = () => {
                             <div className='ckeckScore'>
                                 <a className='scoreATag' href='score'>Check Your Score</a>
                             </div>
-                        </div>
+                        {/* </div> */}
 
                     </div>
                     <div className='gapDiv2'></div>
                 </div>
-            </div>
+            {/* </div> */}
 
         </>
     )
