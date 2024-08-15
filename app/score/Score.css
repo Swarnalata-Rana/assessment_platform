@@ -100,3 +100,47 @@
     background: #8F887C;
     gap: 20px;
   }
+  @media (max-width: 360px) {
+    .successfullyMainDiv {
+      width: 100%;
+      margin: auto;
+    }
+  
+    .whiteBoxSuccessfully {
+      background-color: white;
+      width: 100%;
+      margin: auto;
+    }
+  
+    .whiteBoxSuccessfully1 {
+      width: 100%;
+    }
+  
+    .rightDivTag {
+      width: 28px;
+      margin: auto;
+      margin-top: 20px;
+    }
+  
+    .successfullyDiv {
+      width: 100%;
+      margin: auto;
+      margin-top: 16px;
+      text-align: center;
+    }
+  
+    .maindivSumnited h6,
+    .maindivSumnited p {
+      width: 100%;
+      margin: auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+  
+    .ckeckScore {
+      width: 100%;
+      padding: 12px 24px;
+      margin-top: 40px;
+    }
+  }
+  

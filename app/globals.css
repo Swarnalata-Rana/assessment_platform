@@ -37,7 +37,7 @@
   color: var(--Dark-b, #4C4B49);
 }
 
-/* Instruction*/
+/* homepage */
 .hederDivmain {
   background: #EBE9E6;
 }
@@ -172,15 +172,17 @@
   height: 150px;
 }
 
-@media (max-width: 495px) {
+@media (max-width: 567px) {
 
   .container {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     margin: auto;
   }
 
   .headerDiv {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     margin: auto;
   }
 
@@ -189,21 +191,23 @@
   }
 
   .hederDivmain {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     margin: auto;
   }
 
   .whiteBox {
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     margin: auto;
     margin-top: -34px;
   }
 
   .instructions {
     font-size: 18px;
-    margin-left: 0;
     text-align: center;
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     margin: auto;
   }
 
@@ -216,10 +220,8 @@
   .paragrap0,
   .paragrap1 {
     font-size: 14px;
-    margin-left: 0;
-    width: 355px;
-    margin: auto;
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     margin: auto;
   }
 
@@ -233,7 +235,8 @@
     font-family: Inter;
     font-size: 14px;
     line-height: 150%;
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     margin: auto;
   }
 
@@ -256,12 +259,14 @@
 
   .goodLuck {
     font-size: 14px;
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     margin: auto;
   }
 
   .LineDiv {
-    width: 90%;
+    width: 100%;
+    max-width: 90%;
     margin: 20px auto;
   }
 
@@ -275,108 +280,41 @@
     margin-bottom: 40px;
   }
 
-  /* .successfullyPage */
-  .successfullyMainDiv {
-    width: 360px;
-    margin: auto;
-  }
-
-  .whiteBoxSuccessfully {
-    /* width: 320px; */
-    /* margin: auto; */
-    background-color: white;
-
-  }
-
-  .whiteBoxSuccessfully1 {
-    /* border: 1px solid red; */
-    width: 360px;
-  }
-
-  .rightDivTag {
-    width: 28px;
-    margin: auto;
-    margin-top: 20px;
-  }
-
-  .successfullyDiv {
-    width: 320px;
-    margin: auto;
-    margin-top: 16px;
-    text-align: center;
-  }
-
-  .maindivSumnited h6,
-  .maindivSumnited p {
-    width: 319px;
-    margin: auto;
-    padding: 0 20px;
-    text-align: center;
-  }
-
-  .ckeckScore {
-    width: auto;
-    padding: 12px 24px;
-    margin-top: 40px;
-  }
-
-  /* ScorePagemediaquery */
-  .mainScoreDiv {
-    width: 360px;
-  }
-
-  .blackDivBox {
-    width: 320px;
-  }
-
-  .blackDivBox0 {
-
-  }
-  .yourScored{
-
-  }
-  .checkYourAns{
-    color: var(--Dark-a, #1F1E1C);
-    font-family: "Inria Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  .lineScore{
-    width: 320px;
-    height: 2px;
-  }
-  .scoreCurrectMaoinDiv{
-    display: flex;
-    width: 321px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  .right10PlusMainDiv{
-
-  }
-  .rightImg{
-
-  }
-.lineScore1{
-  display: flex;
-width: 321px;
-flex-direction: column;
-align-items: flex-start;
-gap: 20px;
-}
   /* footer */
   .gapDiv {
     height: 100px;
   }
 
   .footerMainDiv {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     margin: auto;
+    box-sizing: border-box;
+    /* Include padding and border in the element's width */
+  }
+
+  .footer {
+    text-align: center;
+    /* Center align the text for the footer */
+    /* padding: 10px 0; Add some padding for spacing */
+  }
+
+  .footerP {
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+    text-align: center;
+    /* Center align the text */
+    /* overflow-wrap: break-word; Ensure long words break to fit */
+    /* word-break: break-word; */
+    padding: 10px 0;
+    /* Add some padding to avoid text touching the edges */
   }
 }
+
+
+
+
 
 
 
@@ -387,6 +325,7 @@ gap: 20px;
   padding: 46px 0px 68px 0px;
   background: #4C4B49;
   color: white;
+
 }
 
 .footer {

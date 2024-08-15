@@ -11,7 +11,9 @@
     width: 1200px;
     height: 72px;
   }
-  
+  .QAdivP2{
+    margin-left: 10px;
+  }
   .paginationMain {
     display: flex;
     align-items: center;
