@@ -58,7 +58,7 @@
   /* border: 1px solid red; */
   margin: auto;
   margin-top: -25px;
-  background-color:  #F9F7F2;
+  background-color: #F9F7F2;
 }
 
 .instructions {
@@ -66,10 +66,11 @@
   font-family: Inter;
   font-size: 18px;
   font-weight: 700;
-  margin-left: 117px;
-  line-height: 100px;
-  margin: auto;
   width: 471px;
+  margin-left: 117px;
+  /* margin: auto; */
+  line-height: 100px;
+
 }
 
 .paragrap {
@@ -78,6 +79,7 @@
   font-size: 14px;
   font-weight: 400;
   margin-top: -30px;
+
 }
 
 .maindivUi {
@@ -86,40 +88,23 @@
   margin-left: 130px;
 }
 
-.maindivUi1 {
-  margin-top: -30px;
-}
-
-.uiTag {
+.ulTag {
   color: #4C4B49;
   font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 400;
   padding: 10px;
-  /* list-style: none; */
+  width: 471px;
+  margin: auto;
+  margin-left: 15px;
+  margin-top: -20px;
 }
-
-.uiTag li {
-  margin-bottom: 10px;
-  position: relative;
-  padding-left: 25px;
-  /* line-height: 18px; */
-}
-
-/* .uiTag li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: #4C4B49;
-  font-size: 15px;
-  margin-left: 10px;
-} */
 
 .paragrap0 {
   color: var(--Dark-b, #4C4B49);
   font-family: Inter;
   font-size: 14px;
-  margin-top: -25px;
+  margin-top: -7px;
 }
 
 .paragrap1 {
@@ -211,9 +196,8 @@
     margin: auto;
   }
 
-  .paragrap,
-  .paragrap0 {
-    /* margin-top: -20px; */
+  .paragrap{
+    margin-top: -20px;
   }
 
   .paragrap,
@@ -230,31 +214,19 @@
     margin-left: 0;
   }
 
-  .maindivUi1 {
-    margin-top: 0;
-    font-family: Inter;
+  .ulTag {
     font-size: 14px;
-    line-height: 150%;
-    width: 100%;
-    max-width: 280px;
-    margin: auto;
-  }
-
-  .uiTag {
-    font-size: 14px;
-    margin-top: 0;
     padding: 5px;
     margin-top: -30px;
+    width: 280px;
+    margin: auto;
+    margin-right: 3px;
+    /* gap:15px; */
   }
 
-  .uiTag li {
-    font-size: 12px;
+  .ulTag li {
+    font-size: 14px;
     line-height: 1.2;
-    padding-left: 20px;
-  }
-
-  .uiTag li::before {
-    margin-left: 0;
   }
 
   .goodLuck {
@@ -267,17 +239,17 @@
   .LineDiv {
     width: 100%;
     max-width: 90%;
-    margin: 20px auto;
+    /* margin: 20px auto; */
   }
 
   .letsBtnDiv {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .LetsStart {
     font-size: 16px;
     padding: 12px 28px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   /* footer */
@@ -299,7 +271,7 @@
   .footer {
     font-size: 18px;
     text-align: center;
-    color:  #F9F7F2;
+    color: #F9F7F2;
     font-family: Inter;
     font-size: 18px;
     font-weight: 700;

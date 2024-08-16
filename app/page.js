@@ -1,12 +1,12 @@
 import React from 'react';
-import HomePage from './Components/HomePage';
+import Instructions from './Components/Instructions';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const page = () => {
   return (
     <>
       <div className=''>
-        <HomePage />
+        <Instructions/>
       </div>
     </>
   )

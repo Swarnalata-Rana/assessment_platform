@@ -3,7 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 
 
-const HomePage = () => {
+const Instructions = () => {
     return (
         <>
             <div className=''>
@@ -15,9 +15,9 @@ const HomePage = () => {
                     <h4 className='instructions'>Instructions</h4>
                     <div className='maindivUi'>
                         <p className='paragrap'>Please read the instructions carefully before you begin:</p>
-                        <div className='maindivUi1'>
-                            <ui className="uiTag">
-                                <li className=''>
+                        {/* <div className='maindivUi1'> */}
+                            <ul className="ulTag">
+                                <li >
                                     Timing: The test is timed. You have [specified time] minutes to complete all questions
                                 </li>
                                 <li>
@@ -35,9 +35,9 @@ const HomePage = () => {
                                 <li>
                                     Review: After submission, you may review your answers and scores.
                                 </li>
-                            </ui>
-                        </div>
-                        <p className='paragrap0'>lease ensure a stable internet connection. If you encounter any issues, contact support immediately.</p>
+                            </ul>
+                        {/* </div> */}
+                        <p className='paragrap0'>Please ensure a stable internet connection. If you encounter any issues, contact support immediately.</p>
                         <div className='pgOutDiv'>
                             <p className='paragrap1'>Click 'Lets Start' to begin the test. </p>
                             <h4 className='goodLuck'>Good luck!</h4>
@@ -54,4 +54,4 @@ const HomePage = () => {
     )
 }
 
-export default HomePage;
+export default Instructions;

@@ -157,14 +157,20 @@
 		margin-bottom: 60px;
 		margin-top: 50px;
 	}
-
+	
 	.scoreATag {
 		display: inline-block;
 		width: 100%;
+		width: 152px;
 		text-align: center;
+
 		text-decoration: none;
 		color: inherit;
+		white-space: nowrap; /* Prevent text from wrapping */
+		overflow: hidden; /* Hide overflow if the text is too long */
+		text-overflow: ellipsis; /* Add ellipsis if text is too long */
 	}
+	
 
 	.gapDiv2 {
 		height: 75px;
