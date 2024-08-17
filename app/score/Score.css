@@ -100,6 +100,9 @@
     background: #8F887C;
     gap: 20px;
   }
+  .gapDiv2{
+    height: 395px;
+  }
   @media (max-width: 360px) {
     .successfullyMainDiv {
       width: 100%;

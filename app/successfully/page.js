@@ -27,7 +27,6 @@ const page = () => {
                     </div>
                     <div className='gapDiv2'></div>
                 </div>
-
         </>
     )
 }

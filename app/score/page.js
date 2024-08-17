@@ -8,16 +8,6 @@ const page = () => {
                 <Header />
             </div>
             <div className=''>
-                {/* <div className='mainDivPagination1'>
-                    <div className='headerDivP2'>
-                        <img className='logoImgP2' src='LogoGrp.png' />
-                        <img className='QAdivP2' src='QA.png' />
-                    </div>
-                    <div className='headerDiv2'>
-                        <div className='startTest'>Start Test</div>
-                        <p className='scorePTag'>Score</p>
-                    </div>
-                </div> */}
                 <div className='mainScoreDiv'>
                     <div className='gapDiv0'></div>
                     <div className='blackDivBox0'>
