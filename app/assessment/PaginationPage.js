@@ -2,12 +2,11 @@ import React from 'react'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import AssessmentHeader from '../assessment/AssessmentHeader';
+import Submit from './Submit';
 const PaginationPage = () => {
     return (
         <>
             <div className='mainDivPagination'>
-                <div className='mainDivPagination1'>
-                    <AssessmentHeader/>
                     <div className='paginationMain'>
                         <div className="pagination">
                             <a href="#" className="prev"><ArrowBackIosIcon /></a>
@@ -21,11 +20,8 @@ const PaginationPage = () => {
                             <a href="#">8</a>
                             <a href="#" className="next"><ArrowForwardIosIcon /></a>
                         </div>
-                        <div className='submitDiv'>
-                            <a className='submit' href='successfully'>Submit</a>
-                        </div>
+                        <Submit/>
                     </div>
-                </div>
             </div>
         </>
     )

@@ -4,7 +4,9 @@ const Timer = () => {
     return (
         <>
             <div className='TimerSquareBOx'>
-                <div className='TimerCircleSquare'></div>
+                <div className='TimerCircleSquare'>
+                    <div></div>
+                </div>
                 <div className='RemainingTimeDiv'>
                     Remaining Time</div>
             </div>

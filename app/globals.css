@@ -54,7 +54,7 @@
 .whiteBox {
     width: 705px;
     margin: auto;
-    margin-top: -25px;
+    margin-top: -30px;
     background-color: #F9F7F2;
 }
 
@@ -64,7 +64,6 @@
     font-size: 18px;
     font-weight: 700;
     width: 471px;
-    margin-left: 117px;
     line-height: 100px;
 
 }

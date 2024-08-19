@@ -4,12 +4,18 @@ import PaginationPage from './PaginationPage';
 import Filter from './Filter';
 import Question from './Question';
 import Timer from './Timer';
+import AssessmentHeader from './AssessmentHeader';
 const page = () => {
     return (
         <>
-            <div className=''>
-                <div className=''>
-                    <PaginationPage />
+            <div className='mainPage'>
+                <div className='paginationAssesmentComponet'>
+                    <div>
+                        <AssessmentHeader />
+                    </div>
+                    <div>
+                        <PaginationPage />
+                    </div>
                 </div>
                 <div className='mainwidthBgcolor'>
                     <div className='secondPageMainDiv'>

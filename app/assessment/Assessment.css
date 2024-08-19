@@ -1,6 +1,50 @@
 /* AssessmentHeader */
+.headerDivP2{
+    /* border: 2px solid blue; */
+    display:flex ;
+    justify-content: space-between;
+    width: 112px;
+    margin: auto;
+    height: 36px;
+
+}
+.logoImgP2{
+    width: 56px;
+}
 .QAdivP2 {
-    margin-left: 10px;
+    height: 29px;
+}
+/* assessmentPage */
+.paginationAssesmentComponet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 1200px;
+    height: 72px;
+}
+.mainwidthBgcolor {
+    background-color: #EBE9E6;
+}
+
+.secondPageMainDiv {
+    background-color: #EBE9E6;
+    width: 1200px;
+    margin: auto;
+}
+
+.secondPageMainDiv1 {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 894px;
+    margin-left: 103px;
+    margin-right: 203px;
+}
+
+.mainQuestionDiv {
+    width: 560px;
+    margin-top: 66px;
 }
 
 /* pagination */
@@ -32,7 +76,6 @@
     float: left;
     padding: 10px 14px;
     text-decoration: none;
-    /* transition: background-color .3s; */
     border: 1px solid #ddd;
     margin: 0 4px;
     border-radius: 50%;
@@ -52,7 +95,7 @@
 .pagination .prev::before,
 .pagination .next::after {
     font-size: 10px;
-    /* font-weight: 200; */
+   
 }
 
 .prev {
@@ -112,7 +155,6 @@
     width: 109px;
     margin: auto;
     color: var(--Dark-a, #1F1E1C);
-    /* tx bold */
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
@@ -123,8 +165,6 @@
 /*Filter */
 .filterinside {
     width: 284px;
-    /* border: 1px solid red; */
-    /* margin-top: 150px; */
     height: 375px;
     background-color: white;
     border-radius: 12px;
@@ -245,30 +285,7 @@
     color: white;
 }
 
-/* Page */
-.mainwidthBgcolor {
-    background-color: #EBE9E6;
-}
 
-.secondPageMainDiv {
-    background-color: #EBE9E6;
-    width: 1200px;
-    margin: auto;
-}
-
-.secondPageMainDiv1 {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    width: 894px;
-    margin-left: 103px;
-    margin-right: 203px;
-}
-
-.mainQuestionDiv {
-    width: 560px;
-    margin-top: 66px;
-}
 
 /* Question */
 .Question1 {
@@ -359,3 +376,8 @@
 .gapAssessment {
     height: 40px;
 }
+
+/* @media(max-width: 567px){
+
+} */
+

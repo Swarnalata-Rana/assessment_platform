@@ -38,7 +38,7 @@ const page = () => {
                             <p>10</p>
                             <p>Q1</p>
                         </div>
-                        <div className='plusImg'>
+                        <div href='modalform' className='plusImg'>
                             <img src='Plus.png' />
                         </div>
 
