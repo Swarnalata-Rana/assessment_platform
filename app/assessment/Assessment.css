@@ -26,6 +26,13 @@
     width: 1200px;
     height: 72px;
 }
+.paginationAssesmentComponet1{
+    margin: auto;
+    width: 995.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .mainwidthBgcolor {
     background-color: #EBE9E6;

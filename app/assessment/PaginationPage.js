@@ -1,8 +1,7 @@
 import React from 'react'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import AssessmentHeader from '../assessment/AssessmentHeader';
-import Submit from './Submit';
+
 const PaginationPage = () => {
     return (
         <>
@@ -20,7 +19,7 @@ const PaginationPage = () => {
                             <a href="#">8</a>
                             <a href="#" className="next"><ArrowForwardIosIcon /></a>
                         </div>
-                        {/* <Submit/> */}
+                       
                     </div>
             </div>
         </>
