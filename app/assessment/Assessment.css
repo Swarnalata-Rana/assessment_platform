@@ -1,19 +1,22 @@
 /* AssessmentHeader */
-.headerDivP2{
+.headerDivP2 {
     /* border: 2px solid blue; */
-    display:flex ;
+    display: flex;
     justify-content: space-between;
     width: 112px;
     margin: auto;
     height: 36px;
 
 }
-.logoImgP2{
+
+.logoImgP2 {
     width: 56px;
 }
+
 .QAdivP2 {
     height: 29px;
 }
+
 /* assessmentPage */
 .paginationAssesmentComponet {
     display: flex;
@@ -23,6 +26,7 @@
     width: 1200px;
     height: 72px;
 }
+
 .mainwidthBgcolor {
     background-color: #EBE9E6;
 }
@@ -95,7 +99,7 @@
 .pagination .prev::before,
 .pagination .next::after {
     font-size: 10px;
-   
+
 }
 
 .prev {
@@ -140,8 +144,8 @@
     height: 180px;
     width: 150px;
     margin: auto;
-    position:relative;
-    bottom:47px;
+    position: relative;
+    bottom: 47px;
 }
 
 .TimerCircleSquare {
@@ -376,8 +380,90 @@
 .gapAssessment {
     height: 40px;
 }
+ 
+@media (max-width: 567px) {
+    .paginationAssesmentComponet {
+        width: 100%;
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
 
-/* @media(max-width: 567px){
+    .headerDivP2 {
+        width: 100%;
+        max-width: 360px;
+        margin: 18px auto;
+        text-align: center;
+    }
 
-} */
+    .paginationComponent {
+        visibility: hidden;
+        height: 72px;
+    }
 
+    /* timer & filter */
+    .mainwidthBgcolor {
+        width: 100%;
+        margin: auto;
+    }
+
+    .secondPageMainDiv {
+        width: 100%;
+        max-width: 360px;
+        margin: auto;
+    }
+
+    .secondPageMainDiv1 {
+        width: 100%;
+        max-width: 360px;
+        margin: auto;
+    }
+
+    .medeaQuerryTimerFilterComponent {
+        max-width: 360px;
+    }
+
+    .TimerSquareBOx {
+        width: 100%;
+        max-width: 360px;
+        margin: auto;
+    }
+
+    .mainQuestionDiv {
+        width: 100%;
+        max-width: 320px;
+        margin: auto;
+        border: 1px solid red;
+    }
+
+    .mainQuestionDiv1 {
+        width: 100%;
+        max-width: 314px;
+        margin: auto;
+    }
+
+    .mainQuestionDivWhiteBox {
+        width: 100%;
+        max-width: 320px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        align-self: stretch;
+    }
+
+    .questionDiv {
+        width: 100%;
+        max-width: 320px;
+        margin: auto;
+    }
+
+    .optionsMainDiv {
+        width: 100%;
+        max-width: 320px;
+        margin: auto;
+    }
+}

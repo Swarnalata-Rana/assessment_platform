@@ -10,19 +10,19 @@ const page = () => {
         <>
             <div className='mainPage'>
                 <div className='paginationAssesmentComponet'>
-                    <div>
+                    <div className='assessmentComponent'>
                         <AssessmentHeader />
                     </div>
-                    <div>
+                    <div className='paginationComponent'>
                         <PaginationPage />
                     </div>
                 </div>
                 <div className='mainwidthBgcolor'>
                     <div className='secondPageMainDiv'>
                         <div className='secondPageMainDiv1'>
-                            <div>
-                                <Timer />
-                                <Filter />
+                            <div className='medeaQuerryTimerFilterComponent'>
+                                {/* <Timer />
+                                <Filter /> */}
                             </div>
                             <div className='mainQuestionDiv'>
                                 <Question />

@@ -20,7 +20,7 @@ const PaginationPage = () => {
                             <a href="#">8</a>
                             <a href="#" className="next"><ArrowForwardIosIcon /></a>
                         </div>
-                        <Submit/>
+                        {/* <Submit/> */}
                     </div>
             </div>
         </>
