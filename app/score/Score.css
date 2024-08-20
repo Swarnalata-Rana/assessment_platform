@@ -25,7 +25,7 @@
   .Tag35 {
     color: #F9F7F2;
     text-align: center;
-    font-family: Jost;
+    font-family: "Jost";
     font-size: 28px;
     font-weight: 500;
     line-height: normal;
@@ -33,7 +33,7 @@
   
   .yourScored {
     color: #F9F7F2;
-    font-family: Inter;
+    font-family: "Inter";
     font-size: 14px;
     font-weight: 600;
     line-height: 160%;
@@ -103,47 +103,36 @@
   .gapDiv2{
     height: 395px;
   }
-  @media (max-width: 360px) {
-    .successfullyMainDiv {
-      width: 100%;
+  @media (max-width: 567px) {
+    .blackDivBox{
+      width: 320px;
       margin: auto;
     }
-  
-    .whiteBoxSuccessfully {
-      background-color: white;
-      width: 100%;
+    .checkYourAns {
+      width: 161px;
       margin: auto;
+      color: var(--Dark-a, #1F1E1C);
+      /* Label */
+      font-family: Inria Sans;
+      font-size: 16px;
+      font-style: normal;
+      /* font-weight: 700; */
+      line-height: normal;
+      /* text-transform: uppercase; */
     }
-  
-    .whiteBoxSuccessfully1 {
-      width: 100%;
-    }
-  
-    .rightDivTag {
-      width: 28px;
+    .lineScore{
+      width: 320px;
       margin: auto;
-      margin-top: 20px;
+      margin-top: 30px;
     }
-  
-    .successfullyDiv {
-      width: 100%;
+    .scoreCurrectMaoinDiv{
+      width: 321px;
       margin: auto;
-      margin-top: 16px;
-      text-align: center;
+      margin-top: 31px;
     }
-  
-    .maindivSumnited h6,
-    .maindivSumnited p {
-      width: 100%;
+    .lineScore1{
+      width: 321px;
       margin: auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-  
-    .ckeckScore {
-      width: 100%;
-      padding: 12px 24px;
-      margin-top: 40px;
     }
   }
   

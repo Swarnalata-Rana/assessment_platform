@@ -10,7 +10,7 @@ const page = () => {
             <div className=''>
                 <div className='mainScoreDiv'>
                     <div className='gapDiv0'></div>
-                    <div className='blackDivBox0'>
+                    {/* <div className='blackDivBox0'> */}
                         <div className='blackDivBox'>
                             <div className=''>
                                 <p className='Tag35'>35/40</p>
@@ -29,7 +29,7 @@ const page = () => {
                                 <p>Wrong: 2</p>
                             </div>
                         </div>
-                    </div>
+                    {/* </div> */}
                     <div className='checkYourAns'>CHECK YOUR ANSWERS</div>
                     <div className='lineScore'></div>
                     <div className='scoreCurrectMaoinDiv'>

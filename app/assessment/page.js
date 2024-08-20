@@ -25,13 +25,13 @@ const page = () => {
                     <div className='secondPageMainDiv'>
                         <div className='secondPageMainDiv1'>
                             <div className='medeaQuerryTimerFilterComponent'>
-                                <Timer />
-                                <Filter />
+                                {/* <Timer />
+                                <Filter /> */}
                             </div>
                             <div className='mainQuestionDiv'>
+                                {/* <Question />
                                 <Question />
-                                <Question />
-                                <Question />
+                                <Question /> */}
                             </div>
                         </div>
                         <div className='gapDiv'></div>
