@@ -22,9 +22,9 @@ const Timer = () => {
     return (
         <>
             <div className='TimerSquareBox'>
-                <div className='circleFirst'>
-                    <div className='circleTow'>
-                        <div className='circle'>
+                <div className='TimerCircleSquare '>
+                    <div className='circleOne'>
+                        <div className='circleTwo'>
                             <div className='TimerText'>30:
                                 {/* <div className=''>:</div> */}
                                 00</div>

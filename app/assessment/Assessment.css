@@ -176,7 +176,7 @@
 } */
 
 .TimerSquareBox {
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
     height: 180px; 
     width: 150px;
     margin: auto;
@@ -188,29 +188,41 @@
     bottom: 47px;
 
 }
-
-.circle{
-    border: 1px solid rgb(207, 61, 61);
+.TimerCircleSquare {
+    /* border: 1px solid rgb(29, 27, 27); */
     height: 141px;
     width: 141px;
-    border-radius: 50%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
 }
-
-
-.circle {
+.circleOne{
+    border: 1px solid #EBE9E6;
+    height: 141px;
+    width: 141px;
+    border-radius: 50%;     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #E68086; 
-
+    background-color: #40179e;
+    box-shadow: 10px;
+    
+}
+.circleTwo{
+    border: 1px solid #EBE9E6;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color: #E68086;  */
     background-color: white;
 }
 .nimSec{
     color: black;
+    /* background-color: #EBE9E6; */
 }
 .TimerText {
     font-size: 24px;
