@@ -148,7 +148,7 @@
 }
 
 /* Timer */
-.TimerSquareBOx {
+/* .TimerSquareBOx {
     border: 1px solid red;
     height: 180px;
     width: 150px;
@@ -173,7 +173,63 @@
     font-style: normal;
     font-weight: 600;
     line-height: 160%;
+} */
+
+.TimerSquareBox {
+    border: 1px solid red; 
+    height: 180px; 
+    width: 150px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 47px;
+
 }
+
+.circle{
+    border: 1px solid rgb(207, 61, 61);
+    height: 141px;
+    width: 141px;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #E68086; 
+
+    background-color: white;
+}
+.nimSec{
+    color: black;
+}
+.TimerText {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Spacing between the time and "min sec" text */
+}
+
+.RemainingTimeDiv {
+    width: 109px;
+    margin: auto;
+    color: var(--Dark-a, #1F1E1C);
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 160%;
+    text-align: center; /* Center align the text */
+}
+
+
 
 /*Filter */
 .filterinside {
@@ -389,6 +445,8 @@
 .gapAssessment {
     height: 40px;
 }
+
+
 
 @media (max-width: 567px) {
     /* .paginationAssesmentComponet {

@@ -1,45 +1,64 @@
-
 .mainScoreDiv {
     background-color: #EBE9E6;
-  }
-  
-  .gapDiv0 {
+}
+
+.gapDiv0 {
     height: 40px;
-  }
-  
-  .blackDivBox {
+}
+
+.blackDivBox {
     margin: auto;
     width: 625px;
     height: 165px;
     border-radius: 12px;
     border: 1px solid #8F887C;
-    background: #4C4B49 ;
+    background: #4C4B49;
     display: flex;
     justify-content: center;
     color: white;
     align-items: center;
     text-align: center;
     gap: 33px;
-  }
-  
-  .Tag35 {
+    display: flex;
+}
+
+.elementBox {
+    display: flex;
+    width: 406px;
+    margin: auto;
+}
+
+.elementpTag {
+    font-size: 14px;
+}
+
+.verticalLine {
+    margin-left: 33px;
+    margin-right: 33px;
+}
+
+.mainTag35yourScored {
+    margin-left: 43px;
+}
+
+.Tag35 {
     color: #F9F7F2;
     text-align: center;
     font-family: "Jost";
     font-size: 28px;
     font-weight: 500;
     line-height: normal;
-  }
-  
-  .yourScored {
+}
+
+.yourScored {
     color: #F9F7F2;
     font-family: "Inter";
     font-size: 14px;
     font-weight: 600;
     line-height: 160%;
-  }
-  
-  .checkYourAns {
+}
+
+.checkYourAns {
     margin: auto;
     width: 601px;
     color: #1F1E1C;
@@ -48,38 +67,38 @@
     font-weight: 700;
     line-height: normal;
     margin-top: 139px;
-  }
-  
-  .lineScore {
+}
+
+.lineScore {
     margin: auto;
     height: 2px;
     width: 601px;
     background: #777671;
     margin-top: 25px;
-  }
-  
-  .scoreCurrectMaoinDiv {
+}
+
+.scoreCurrectMaoinDiv {
     margin: auto;
     width: 580px;
     display: flex;
     justify-content: space-between;
     margin-top: 45px;
-  }
-  
-  .right10PlusMainDiv {
+}
+
+.right10PlusMainDiv {
     display: flex;
     gap: 16px;
-  }
-  
-  .rightImg {
+}
+
+.rightImg {
     display: flex;
     width: 28px;
     height: 28px;
     justify-content: center;
     align-items: center;
-  }
-  
-  .plusImg {
+}
+
+.plusImg {
     width: 28px;
     height: 28px;
     flex-shrink: 0;
@@ -90,49 +109,95 @@
     justify-content: center;
     align-items: center;
     border: 1px solid #F4D150;
-  
-  }
-  
-  .lineScore1 {
+
+}
+
+.lineScore1 {
     width: 580px;
     height: 1px;
     margin: auto;
     background: #8F887C;
     gap: 20px;
-  }
-  .gapDiv2{
+}
+
+.gapDiv2 {
     height: 395px;
-  }
-  @media (max-width: 567px) {
-    .blackDivBox{
-      width: 320px;
-      margin: auto;
+}
+
+@media (max-width: 567px) {
+    .blackDivBox {
+        height: 218px;
+        width: 320px;
+        margin: auto;
+        display: block;
     }
+
+    .mainTag35yourScored {
+        width: 84px;
+        margin: auto;
+        margin-top: 18px;
+    }
+
+    .Tag35 {
+        font-size: 28px;
+        color: var(--Light-b, #F9F7F2);
+        text-align: center;
+        font-family: "Jost";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: 84px;
+        margin: auto;
+    }
+
+    .yourScor {
+        font-size: 14px;
+        color: var(--Light-b, #F9F7F2);
+        text-align: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160%;
+    }
+
+    .verticalLine {
+        display: none;
+    }
+
+    .elementBox {
+        width: 268px;
+        margin: auto;
+        gap: 20px;
+    }
+
     .checkYourAns {
-      width: 161px;
-      margin: auto;
-      color: var(--Dark-a, #1F1E1C);
-      /* Label */
-      font-family: Inria Sans;
-      font-size: 16px;
-      font-style: normal;
-      /* font-weight: 700; */
-      line-height: normal;
-      /* text-transform: uppercase; */
+        width: 321px;
+        margin: auto;
+        color: var(--Dark-a, #1F1E1C);
+        margin-top: 71px;
+        font-family: Inria Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
-    .lineScore{
-      width: 320px;
-      margin: auto;
-      margin-top: 30px;
+
+    .lineScore {
+        width: 320px;
+        margin: auto;
+        margin-top: 30px;
     }
-    .scoreCurrectMaoinDiv{
-      width: 321px;
-      margin: auto;
-      margin-top: 31px;
+
+    .scoreCurrectMaoinDiv {
+        width: 321px;
+        margin: auto;
+        margin-top: 31px;
     }
-    .lineScore1{
-      width: 321px;
-      margin: auto;
+
+    .lineScore1 {
+        width: 321px;
+        margin: auto;
     }
-  }
-  
+}
