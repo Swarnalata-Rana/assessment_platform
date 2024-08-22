@@ -1,4 +1,6 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 * {
     margin: 0;
@@ -37,7 +39,7 @@
 }
 
 /* InstructionPage*/
-.hederDivmain {
+.instructionDivmain {
     background: #EBE9E6;
 }
 
@@ -99,15 +101,15 @@
     color: #4C4B49;
     font-family: "Inter";
     font-size: 14px;
-    margin-top: -7px;
+    /* margin-top: -7px; */
 }
 
 .paragrap1 {
-    color:#4C4B49;
+    color: #4C4B49;
     font-family: "Inter";
     font-size: 14px;
     font-weight: 400;
-    margin-top: -10px;
+    /* margin-top: -10px; */
 }
 
 .goodLuck {
@@ -152,13 +154,42 @@
     height: 150px;
 }
 
+/* footer */
+
+.footerMainDiv {
+    height: 171px;
+    padding: 46px 0px 68px 0px;
+    background: #4C4B49;
+    color: #F9F7F2;
+    width: 100%;
+}
+
+.footer {
+    font-size: 18px;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footerP {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Inria Sans";
+    font-size: 14px;
+}
+
 @media (max-width: 567px) {
 
-    .container {
+    /* .container {
         width: 100%;
         max-width: 360px;
         margin: auto;
-    }
+    } */
+
+/* header */
 
     .headerDiv {
         width: 100%;
@@ -170,9 +201,8 @@
         font-size: 24px;
     }
 
-    .hederDivmain {
+    .instructionDivmain {
         width: 100%;
-        /* max-width: 360px; */
         margin: auto;
     }
 
@@ -248,31 +278,4 @@
         margin-bottom: 50px;
     }
 
-}
-
-/* footer */
-
-.footerMainDiv {
-    height: 171px;
-    padding: 46px 0px 68px 0px;
-    background: #4C4B49;
-    color: #F9F7F2;
-    width: 100%;
-}
-
-.footer {
-    font-size: 18px;
-    text-align: center;
-    font-family: "Inter";
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.footerP {
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    text-align: center;
-    margin-top: 20px;
-    font-family: "Inria Sans";
-    font-size: 14px;
 }

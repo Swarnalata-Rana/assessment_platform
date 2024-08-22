@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body className={inter.className}>
                 {children}
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Iowan Old Style" />
+                {/* <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Iowan Old Style" />
                 <link
                     rel="stylesheet"
                     href="https://fonts.googleapis.com/css2?family=Inknut Antiqua"
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
                 <link
                     rel="stylesheet"
                     href="https://fonts.googleapis.com/css2?family=Inria Serif"
-                />
+                /> */}
                 <div className='layoutFooter'>
                     <Footer />
                 </div>

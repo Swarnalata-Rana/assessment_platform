@@ -6,10 +6,10 @@ import Footer from './Footer';
 const Instructions = () => {
     return (
         <>
-            <div className=''>
+            {/* <div className=''> */}
                 <Header />
-            </div>
-            <div className='hederDivmain'>
+            {/* </div> */}
+            <div className='instructionDivmain'>
                 <h2 className='MCQh2'>MCQ Test Portal</h2>
                 <div className='whiteBox'>
                     <div className='maindivUi'>
