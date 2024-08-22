@@ -15,9 +15,9 @@ const page = () => {
                         <div className='assessmentComponent'>
                             <AssessmentHeader />
                         </div>
-                        <div className='paginationComponent'>
+                        {/* <div className='paginationComponent'> */}
                             <PaginationPage />
-                        </div>
+                        {/* </div> */}
                     </div>
                     <Submit />
                 </div>
@@ -25,8 +25,8 @@ const page = () => {
                     <div className='secondPageMainDiv'>
                         <div className='secondPageMainDiv1'>
                             <div className='medeaQuerryTimerFilterComponent'>
-                                <Timer />
-                                <Filter />
+                                {/* <Timer />
+                                <Filter /> */}
                             </div>
                             <div className='mainQuestionDiv'>
                                 <Question />

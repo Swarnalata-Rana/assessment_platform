@@ -79,9 +79,10 @@
 }
 
 .pagination {
+    /* border: 1px solid red; */
     /* display: inline-block;
     align-items: center; */
-    gap: 16px;
+    gap: 7px;
 }
 
 .pagination a {
@@ -114,6 +115,8 @@
 .prev {
     display: flex;
     align-items: center;
+    justify-content: center;
+    font-weight: 1px;
     background-color: #FEEEB4;
 }
 
@@ -177,7 +180,7 @@
 
 .TimerSquareBox {
     /* border: 1px solid red;  */
-    height: 180px; 
+    height: 180px;
     width: 150px;
     margin: auto;
     position: relative;
@@ -188,31 +191,34 @@
     bottom: 47px;
 
 }
+
 .TimerCircleSquare {
     /* border: 1px solid rgb(29, 27, 27); */
     height: 141px;
     width: 141px;
     margin: auto;
 }
-.circleOne{
+
+.circleOne {
     border: 1px solid #EBE9E6;
     height: 141px;
     width: 141px;
-    border-radius: 50%;     
+    border-radius: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #E68086; 
-    background-color: #40179e;
+    color: #E68086;
+    background-color: #ddd7cf;
     box-shadow: 10px;
-    
+
 }
-.circleTwo{
+
+.circleTwo {
     border: 1px solid #EBE9E6;
     height: 110px;
     width: 110px;
-    border-radius: 50%;     
+    border-radius: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -220,14 +226,17 @@
     /* color: #E68086;  */
     background-color: white;
 }
-.nimSec{
+
+.nimSec {
     color: black;
     /* background-color: #EBE9E6; */
 }
+
 .TimerText {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 5px; /* Spacing between the time and "min sec" text */
+    margin-bottom: 5px;
+    /* Spacing between the time and "min sec" text */
 }
 
 .RemainingTimeDiv {
@@ -238,7 +247,8 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 160%;
-    text-align: center; /* Center align the text */
+    text-align: center;
+    /* Center align the text */
 }
 
 
@@ -555,17 +565,19 @@
 
 @media only screen and (max-width:567px) {
     .paginationAssesmentComponet1 {
-        flex-direction: column; 
+        flex-direction: column;
         width: 360px;
         margin: auto;
         /* Ensure elements stack on top of each other at 360px */
     }
 
     .assessmentComponent {
-        width: 100%; /* Full width on mobile */
+        width: 100%;
+        /* Full width on mobile */
     }
 
     .paginationComponent {
-        width: 100%; /* Full width on mobile */
+        width: 100%;
+        /* Full width on mobile */
     }
 }

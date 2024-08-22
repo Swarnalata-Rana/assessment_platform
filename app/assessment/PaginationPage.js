@@ -6,7 +6,7 @@ const PaginationPage = () => {
     return (
         <>
             <div className='mainDivPagination'>
-                    {/* <div className='paginationMain'> */}
+                    <div className='paginationMain'>
                         <div className="pagination">
                             <a href="#" className="prev"><ArrowBackIosIcon /></a>
                             <a href="#">1</a>
@@ -20,8 +20,8 @@ const PaginationPage = () => {
                             <a href="#" className="next"><ArrowForwardIosIcon /></a>
                         </div>
                        
-                    {/* </div> */}
-            </div>
+                    </div>
+           </div>
         </>
     )
 }

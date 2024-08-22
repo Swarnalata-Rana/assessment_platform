@@ -17,7 +17,7 @@ const page = () => {
                                 <div className='successfullyDiv'>Successfully Sumbitted</div>
                                 <h6>Thank you for completing the test! </h6>
                                 <p>
-                                    Review your results and keep practicing.
+                                    Review your results and keep practicing.<br/>
                                     Great job and keep up the hard work!
                                 </p>
                             </div>
