@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
+.main{
+    margin: auto;
+}
 .mainScoreDiv {
     background-color: #EBE9E6;
 }
@@ -82,10 +86,11 @@
 
 .scoreCurrectMaoinDiv {
     margin: auto;
-    width: 580px;
+    width: 595px;
     display: flex;
     justify-content: space-between;
     margin-top: 45px;
+
 }
 
 .right10PlusMainDiv {
@@ -122,7 +127,10 @@
     background: #8F887C;
     gap: 20px;
 }
-
+.mainLastPage{
+    width: 595px;
+    margin: auto;
+}
 .gapDiv2 {
     height: 395px;
 }
@@ -140,6 +148,7 @@
     border-radius: 12px;
     padding: 40px;
     border: 1px solid green;
+    margin-left: 35px;
 
 }
 
@@ -150,6 +159,7 @@
     border-radius: 12px;
     padding: 40px;
     border: 1px solid red;
+    margin-left: 35px;
 
 }
 
@@ -186,7 +196,9 @@
     margin: 10px 0;
     margin-left: 8px;
 }
-
+.gapAssessment {
+    height: 53px;
+}
 .options input[type="radio"] {
     margin-right: 10px;
 }
@@ -265,7 +277,10 @@
         margin: auto;
     }
 
-    
+    .mainLastPage{
+        width: 320px;
+        margin: auto;
+    }
     .mainQuestionDiv {
         width: 100%;
         max-width: 320px;

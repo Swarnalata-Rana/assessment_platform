@@ -9,25 +9,25 @@ const Question = () => {
             </div>
             <div className='mainQuestionDivWhiteBox'>
                 <div className='questionDiv'>
-                     Which of the following committees recommended inclusion of fundamental duties ?
+                    Which of the following committees recommended inclusion of fundamental duties ?
                 </div>
                 <div className='optionsMainDiv'>
                     <ul class="options">
                         <li>
-                            <input type="radio" id="paris" name="capital" value="paris" />
-                            <label className='answer' for="paris">Tarapore Committee </label>
+                            <input type="radio" />
+                            <label >Tarapore Committee</label>
                         </li>
                         <li>
-                            <input type="radio" id="london" name="capital" value="london" />
-                            <label for="london">Tarapore Committee </label>
+                            <input type="radio" />
+                            <label>Tarapore Committee</label>
                         </li>
                         <li>
-                            <input type="radio" id="rome" name="capital" value="rome" />
-                            <label for="rome">Swaran Singh Committee </label>
+                            <input type="radio" />
+                            <label >Swaran Singh Committee</label>
                         </li>
                         <li>
-                            <input type="radio" id="berlin" name="capital" value="berlin" />
-                            <label for="berlin">Balwantrai Mehta Committee </label>
+                            <input type="radio" />
+                            <label >Balwantrai Mehta Committee</label>
                         </li>
                     </ul>
                 </div>

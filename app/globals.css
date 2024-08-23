@@ -67,7 +67,6 @@
     font-weight: 700;
     width: 471px;
     line-height: 100px;
-
 }
 
 .paragrap {
@@ -76,7 +75,6 @@
     font-size: 14px;
     font-weight: 400;
     margin-top: -30px;
-
 }
 
 .maindivUi {
@@ -189,11 +187,10 @@
         margin: auto;
     } */
 
-/* header */
+    /* header */
 
     .headerDiv {
         width: 100%;
-        max-width: 360px;
         margin: auto;
     }
 
@@ -247,13 +244,11 @@
         width: 280px;
         margin: auto;
         margin-right: 4px;
-
     }
 
     .ulTag li {
         font-size: 14px;
         line-height: 1.2;
-
     }
 
     .goodLuck {

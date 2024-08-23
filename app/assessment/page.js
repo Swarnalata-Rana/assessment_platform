@@ -10,14 +10,14 @@ const page = () => {
     return (
         <>
             <div className='mainPage'>
-                <div className='paginationAssesmentComponet'>
+                <div className='paginationAssesmentHeaderComponet '>
                     <div className='paginationAssesmentComponet1'>
                         <div className='assessmentComponent'>
                             <AssessmentHeader />
                         </div>
-                        {/* <div className='paginationComponent'> */}
+                        <div className='paginationComponent'>
                             <PaginationPage />
-                        {/* </div> */}
+                        </div>
                     </div>
                     <Submit />
                 </div>

@@ -7,7 +7,7 @@ const page = () => {
             <div className=''>
                 <Header />
             </div>
-            <div className=''>
+            <div className='main'>
                 <div className='mainScoreDiv'>
                     <div className='gapDiv0'></div>
                     <div className='blackDivBox'>
@@ -34,79 +34,87 @@ const page = () => {
                     </div>
                     <div className='checkYourAns'>CHECK YOUR ANSWERS</div>
                     <div className='lineScore'></div>
-                    <div className='scoreCurrectMaoinDiv'>
-                        <div className='right10PlusMainDiv'>
-                            <img className='rightImg' src='Check.png' />
-                            <p>10</p>
-                            <p>Q1</p>
+
+                    <div className='mainLastPage'>
+                        <div className='scoreCurrectMaoinDiv'>
+                            <div className='right10PlusMainDiv'>
+                                <img className='rightImg' src='Check.png' />
+                                <p>10</p>
+                                <p>Q1</p>
+                            </div>
+                            <div href='modalform' className='plusImg'>
+                                <img src='whiteMinus.png' />
+                            </div>
                         </div>
-                        <div href='modalform' className='plusImg'>
-                            <img src='whiteMinus.png' />
+
+                        <div className='mainQuestionDivWhiteBox'>
+                            <div className='questionDiv'>
+                                <p> Which of the following committees recommended inclusion of fundamental duties ?</p>
+                            </div>
+                            <div className='optionsMainDiv'>
+                                <ul class="options">
+                                    <li>
+                                        <input type="radio" />
+                                        <label for="paris">Tarapore Committee</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" />
+                                        <label >Tarapore Committee</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" />
+                                        <label >Swaran Singh Committee</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" />
+                                        <label >Balwantrai Mehta Committee</label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                        <div className='gapAssessment'></div>
                     </div>
 
-                    <div className='mainQuestionDivWhiteBox'>
-                        <div className='questionDiv'>
-                            <p> Which of the following committees recommended inclusion of fundamental duties ?</p>
+                    <div className='mainLastPage'>
+                        <div className='lineScore1'></div>
+                        <div className='scoreCurrectMaoinDiv'>
+                            <div className='right10PlusMainDiv'>
+                                <img className='rightImg' src='wrong.png' />
+                                <p>00</p>
+                                <p>Q2</p>
+                            </div>
+                            <div className='plusImg'>
+                                <img src='whiteMinus.png' />
+                            </div>
                         </div>
-                        <div className='optionsMainDiv'>
-                            <ul class="options">
-                                <li>
-                                    <input type="radio" id="paris" name="capital" value="paris" />
-                                    <label className='answer' for="paris">Tarapore Committee </label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="london" name="capital" value="london" />
-                                    <label for="london">Tarapore Committee </label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="rome" name="capital" value="rome" />
-                                    <label for="rome">Swaran Singh Committee </label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="berlin" name="capital" value="berlin" />
-                                    <label for="berlin">Balwantrai Mehta Committee </label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <div className='lineScore1'></div>
-                    <div className='scoreCurrectMaoinDiv'>
-                        <div className='right10PlusMainDiv'>
-                            <img className='rightImg' src='wrong.png' />
-                            <p>00</p>
-                            <p>Q2</p>
+                        <div className='mainQuestionDivWhiteBoxRed'>
+                            <div className='questionDiv'>
+                                <p> Which of the following committees recommended inclusion of fundamental duties ?</p>
+                            </div>
+                            <div className='optionsMainDiv'>
+                                <ul class="options">
+                                    <li>
+                                        <input type="radio" />
+                                        <label  >Tarapore Committee</label>
+                                    </li>
+                                    <li style={{border:'1px solid green',width:'257px'}}>
+                                        <input type="radio" />
+                                        <label >Tarapore Committee</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" />
+                                        <label >Swaran Singh Committee</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" />
+                                        <label >Balwantrai Mehta Committee</label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div className='plusImg'>
-                            <img src='whiteMinus.png' />
-                        </div>
-                    </div>
+                        <div className='gapAssessment'></div>
 
-                    <div className='mainQuestionDivWhiteBoxRed'>
-                        <div className='questionDiv'>
-                            <p> Which of the following committees recommended inclusion of fundamental duties ?</p>
-                        </div>
-                        <div className='optionsMainDiv'>
-                            <ul class="options">
-                                <li>
-                                    <input type="radio" id="paris" name="capital" value="paris" />
-                                    <label className='answer' for="paris">Tarapore Committee </label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="london" name="capital" value="london" />
-                                    <label for="london">Tarapore Committee </label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="rome" name="capital" value="rome" />
-                                    <label for="rome">Swaran Singh Committee </label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="berlin" name="capital" value="berlin" />
-                                    <label for="berlin">Balwantrai Mehta Committee </label>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                     <div className='lineScore1'></div>
                     <div className='scoreCurrectMaoinDiv'>
@@ -197,7 +205,7 @@ const page = () => {
                         </div>
                     </div>
                     <div className='lineScore1'></div>
-                    <div className='scoreCurrectMaoinDiv'>
+                    {/* <div className='scoreCurrectMaoinDiv'>
                         <div className='right10PlusMainDiv'>
                             <img className='rightImg' src='exclamation.png' />
                             <p>0</p>
@@ -207,7 +215,46 @@ const page = () => {
                             <img src='Plus.png' />
                         </div>
                     </div>
-                    <div className='lineScore1'></div>
+                    <div className='lineScore1'></div> */}
+                    <div className='mainLastPage' >
+                        <div className='scoreCurrectMaoinDiv'>
+                            <div className='right10PlusMainDiv'>
+                                <img className='rightImg' src='exclamation.png' />
+                                <p>10</p>
+                                <p>Q1</p>
+                            </div>
+                            <div href='modalform' className='plusImg'>
+                                <img src='whiteMinus.png' />
+                            </div>
+                        </div>
+
+                        <div className='mainQuestionDivWhiteBox' style={{border:'1px solid white'}}>
+                            <div className='questionDiv'>
+                                <p> Which of the following committees recommended inclusion of fundamental duties ?</p>
+                            </div>
+                            <div className='optionsMainDiv'>
+                                <ul class="options">
+                                    <li>
+                                        <input type="radio" />
+                                        <label for="paris">Tarapore Committee</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" />
+                                        <label >Tarapore Committee</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" />
+                                        <label >Swaran Singh Committee</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" />
+                                        <label >Balwantrai Mehta Committee</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className='gapAssessment'></div>
+                    </div>
 
                     <div className='gapDiv2'></div>
                 </div>
