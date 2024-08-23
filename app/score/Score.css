@@ -210,7 +210,6 @@
         color: var(--Light-b, #F9F7F2);
         text-align: center;
         font-family: "Jost";
-        font-size: 28px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -223,8 +222,6 @@
         color: var(--Light-b, #F9F7F2);
         text-align: center;
         font-family: Inter;
-        font-size: 14px;
-        font-style: normal;
         font-weight: 600;
         line-height: 160%;
     }
@@ -268,7 +265,7 @@
         margin: auto;
     }
 
-    /* .question */
+    
     .mainQuestionDiv {
         width: 100%;
         max-width: 320px;
@@ -302,11 +299,14 @@
         gap: 12px;
         align-self: stretch;
     }
-
+.questionDiv{
+    width: 260px;
+    margin: auto;
+}
     .questionDiv {
-        width: 100%;
+        /* width: 100%;
         max-width: 320px;
-        margin: auto;
+        margin: auto; */
     }
 
     .optionsMainDiv {
@@ -315,4 +315,125 @@
         margin: auto;
     }
 
+} 
+ 
+/* 
+@media (max-width: 567px) {
+    .blackDivBox {
+        height: 218px;
+        width: 320px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .mainTag35yourScored {
+        width: 84px;
+        margin: 18px auto 0 auto;
+    }
+
+    .Tag35 {
+        font-size: 28px;
+        color: var(--Light-b, #F9F7F2);
+        text-align: center;
+        font-family: "Jost";
+        font-weight: 500;
+        line-height: normal;
+        width: 84px;
+        margin: 0 auto;
+    }
+
+    .yourScor {
+        font-size: 14px;
+        color: var(--Light-b, #F9F7F2);
+        text-align: center;
+        font-family: Inter;
+        font-weight: 600;
+        line-height: 160%;
+    }
+
+    .verticalLine {
+        display: none;
+    }
+
+    .elementBox {
+        width: 268px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .checkYourAns {
+        width: 321px;
+        margin: 71px auto 0 auto;
+        color: var(--Dark-a, #1F1E1C);
+        font-family: Inria Sans;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .lineScore {
+        width: 320px;
+        margin: 30px auto 0 auto;
+    }
+
+    .scoreCurrectMaoinDiv {
+        width: 320px;
+        margin: 31px auto 0 auto;
+    }
+
+    .lineScore1 {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .mainQuestionDiv {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .mainQuestionDiv1 {
+        width: 100%;
+        max-width: 314px;
+        margin: 0 auto;
+    }
+
+    .mainQuestionDivWhiteBox {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        align-self: stretch;
+        padding: 30px;
+
+    }
+
+    .mainQuestionDivWhiteBoxRed {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        align-self: stretch;
+        padding: 30px;
+    }
+
+    .questionDiv {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .optionsMainDiv {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
 }
+ */

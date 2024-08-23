@@ -45,7 +45,7 @@ const page = () => {
                         </div>
                     </div>
 
-                    {/* <div className='mainQuestionDivWhiteBox'>
+                    <div className='mainQuestionDivWhiteBox'>
                         <div className='questionDiv'>
                             <p> Which of the following committees recommended inclusion of fundamental duties ?</p>
                         </div>
@@ -69,7 +69,7 @@ const page = () => {
                                 </li>
                             </ul>
                         </div>
-                    </div> */}
+                    </div>
 
                     <div className='lineScore1'></div>
                     <div className='scoreCurrectMaoinDiv'>
@@ -83,7 +83,7 @@ const page = () => {
                         </div>
                     </div>
 
-                    {/* <div className='mainQuestionDivWhiteBoxRed'>
+                    <div className='mainQuestionDivWhiteBoxRed'>
                         <div className='questionDiv'>
                             <p> Which of the following committees recommended inclusion of fundamental duties ?</p>
                         </div>
@@ -107,7 +107,7 @@ const page = () => {
                                 </li>
                             </ul>
                         </div>
-                    </div> */}
+                    </div>
                     <div className='lineScore1'></div>
                     <div className='scoreCurrectMaoinDiv'>
                         <div className='right10PlusMainDiv'>

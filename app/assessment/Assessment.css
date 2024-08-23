@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 /* AssessmentHeader */
 .headerDivP2 {
     /* border: 2px solid blue; */
@@ -8,7 +9,6 @@
     width: 112px;
     margin: auto;
     height: 36px;
-
 }
 
 .logoImgP2 {
@@ -19,7 +19,7 @@
     height: 29px;
 }
 
-/* assessmentPage */
+/* Page */
 .paginationAssesmentComponet {
     display: flex;
     justify-content: space-between;
@@ -81,9 +81,6 @@
 }
 
 .pagination {
-    /* border: 1px solid red; */
-    /* display: inline-block;
-    align-items: center; */
     gap: 8px;
 }
 
@@ -153,33 +150,6 @@
 }
 
 /* Timer */
-/* .TimerSquareBOx {
-    border: 1px solid red;
-    height: 180px;
-    width: 150px;
-    margin: auto;
-    position: relative;
-    bottom: 47px;
-}
-
-.TimerCircleSquare {
-    border: 1px solid rgb(29, 27, 27);
-    height: 141px;
-    width: 141px;
-    margin: auto;
-}
-
-.RemainingTimeDiv {
-    width: 109px;
-    margin: auto;
-    color: var(--Dark-a, #1F1E1C);
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 160%;
-} */
-
 .TimerSquareBox {
     /* border: 1px solid red;  */
     height: 180px;
@@ -238,7 +208,6 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 5px;
-    /* Spacing between the time and "min sec" text */
 }
 
 .RemainingTimeDiv {
@@ -250,10 +219,7 @@
     font-weight: 600;
     line-height: 160%;
     text-align: center;
-    /* Center align the text */
 }
-
-
 
 /*Filter */
 .filterinside {
@@ -559,22 +525,19 @@
     }
 }
 
-.paginationAssesmentComponet1 {
-    display: flex;
-    /* flex-direction: column; Default: stack elements vertically */
-}
 
+/* pagination and .assessmentHEderComponent */
 @media only screen and (max-width: 567px) {
     .paginationAssesmentComponet {
         display: flex;
-        justify-content: center; /* Center the child elements */
+        justify-content: center;
         align-items: center;
     }
 
     .paginationAssesmentComponet1 {
         width: 100%;
         display: inline-block;
-        text-align: center; /* Ensure child elements are centered */
+        text-align: center;
     }
 
     .assessmentComponent,
@@ -583,14 +546,13 @@
         max-width: 360px;
         margin: auto;
         height: 72px;
-        border: 1px solid red;
         align-items: center;
         display: flex;
-        justify-content: center; /* Center content inside the box */
+        justify-content: center;
     }
 
     .paginationComponent {
-        height: 74px; /* Keep your height for paginationComponent */
+        height: 74px;
         background-color: #FCFAFA;
     }
 }

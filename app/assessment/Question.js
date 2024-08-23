@@ -9,7 +9,7 @@ const Question = () => {
             </div>
             <div className='mainQuestionDivWhiteBox'>
                 <div className='questionDiv'>
-                    <p> Which of the following committees recommended inclusion of fundamental duties ?</p>
+                     Which of the following committees recommended inclusion of fundamental duties ?
                 </div>
                 <div className='optionsMainDiv'>
                     <ul class="options">
