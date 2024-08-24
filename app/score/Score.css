@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
-.main{
+.main {
     margin: auto;
 }
+
 .mainScoreDiv {
     background-color: #EBE9E6;
 }
@@ -54,7 +55,6 @@
     font-family: "Jost";
     font-size: 28px;
     font-weight: 500;
-    line-height: normal;
 }
 
 .yourScored {
@@ -62,7 +62,8 @@
     font-family: "Inter";
     font-size: 14px;
     font-weight: 600;
-    line-height: 160%;
+    margin-top: -20px;
+
 }
 
 .checkYourAns {
@@ -72,7 +73,6 @@
     font-family: "Inria Sans";
     font-size: 16px;
     font-weight: 700;
-    line-height: normal;
     margin-top: 139px;
 }
 
@@ -127,10 +127,12 @@
     background: #8F887C;
     gap: 20px;
 }
-.mainLastPage{
+
+.mainLastPage {
     width: 595px;
     margin: auto;
 }
+
 .gapDiv2 {
     height: 395px;
 }
@@ -185,7 +187,7 @@
     padding: 0;
     margin: 0 auto;
     width: 460px;
-    color: var(--Dark-b, #4C4B49);
+    color: #4C4B49;
     font-family: Inter, sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -196,9 +198,11 @@
     margin: 10px 0;
     margin-left: 8px;
 }
+
 .gapAssessment {
     height: 53px;
 }
+
 .options input[type="radio"] {
     margin-right: 10px;
 }
@@ -207,8 +211,11 @@
     .blackDivBox {
         height: 218px;
         width: 320px;
-        margin: auto;
         display: block;
+        padding: 0;
+        box-sizing: border-box;
+
+
     }
 
     .mainTag35yourScored {
@@ -219,7 +226,7 @@
 
     .Tag35 {
         font-size: 28px;
-        color: var(--Light-b, #F9F7F2);
+        color: #F9F7F2;
         text-align: center;
         font-family: "Jost";
         font-style: normal;
@@ -231,7 +238,7 @@
 
     .yourScor {
         font-size: 14px;
-        color: var(--Light-b, #F9F7F2);
+        color: #F9F7F2;
         text-align: center;
         font-family: Inter;
         font-weight: 600;
@@ -246,209 +253,76 @@
         width: 268px;
         margin: auto;
         gap: 20px;
+        box-sizing: border-box;
+
     }
 
     .checkYourAns {
         width: 321px;
         margin: auto;
-        color: var(--Dark-a, #1F1E1C);
+        color: #1F1E1C;
         margin-top: 71px;
-        font-family: Inria Sans;
+        font-family: "Inria Sans";
         font-size: 16px;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
+        box-sizing: border-box;
+
     }
 
     .lineScore {
         width: 320px;
         margin: auto;
         margin-top: 30px;
+        box-sizing: border-box;
+
     }
 
     .scoreCurrectMaoinDiv {
         width: 321px;
-        margin: auto;
         margin-top: 31px;
+        box-sizing: border-box;
+
     }
 
     .lineScore1 {
         width: 321px;
-        margin: auto;
+        box-sizing: border-box;
     }
 
-    .mainLastPage{
+    .mainLastPage {
         width: 320px;
-        margin: auto;
-    }
-    .mainQuestionDiv {
-        width: 100%;
-        max-width: 320px;
-        margin: auto;
-    }
-
-    .mainQuestionDiv1 {
-        width: 100%;
-        max-width: 314px;
-        margin: auto;
-    }
-
-    .mainQuestionDivWhiteBox {
-        width: 100%;
-        max-width: 320px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        align-self: stretch;
-    }
-
-    .mainQuestionDivWhiteBoxRed {
-        width: 100%;
-        max-width: 320px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        align-self: stretch;
-    }
-.questionDiv{
-    width: 260px;
-    margin: auto;
-}
-    .questionDiv {
-        /* width: 100%;
-        max-width: 320px;
-        margin: auto; */
-    }
-
-    .optionsMainDiv {
-        width: 100%;
-        max-width: 320px;
-        margin: auto;
-    }
-
-} 
- 
-/* 
-@media (max-width: 567px) {
-    .blackDivBox {
-        height: 218px;
-        width: 320px;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .mainTag35yourScored {
-        width: 84px;
-        margin: 18px auto 0 auto;
-    }
-
-    .Tag35 {
-        font-size: 28px;
-        color: var(--Light-b, #F9F7F2);
-        text-align: center;
-        font-family: "Jost";
-        font-weight: 500;
-        line-height: normal;
-        width: 84px;
-        margin: 0 auto;
-    }
-
-    .yourScor {
-        font-size: 14px;
-        color: var(--Light-b, #F9F7F2);
-        text-align: center;
-        font-family: Inter;
-        font-weight: 600;
-        line-height: 160%;
-    }
-
-    .verticalLine {
-        display: none;
-    }
-
-    .elementBox {
-        width: 268px;
-        margin: 0 auto;
-        gap: 20px;
-    }
-
-    .checkYourAns {
-        width: 321px;
-        margin: 71px auto 0 auto;
-        color: var(--Dark-a, #1F1E1C);
-        font-family: Inria Sans;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: normal;
-        text-align: center;
-    }
-
-    .lineScore {
-        width: 320px;
-        margin: 30px auto 0 auto;
-    }
-
-    .scoreCurrectMaoinDiv {
-        width: 320px;
-        margin: 31px auto 0 auto;
-    }
-
-    .lineScore1 {
-        width: 320px;
-        margin: 0 auto;
+        box-sizing: border-box;
     }
 
     .mainQuestionDiv {
         width: 100%;
         max-width: 320px;
-        margin: 0 auto;
+        box-sizing: border-box;
     }
 
     .mainQuestionDiv1 {
         width: 100%;
         max-width: 314px;
-        margin: 0 auto;
+        box-sizing: border-box;
     }
 
     .mainQuestionDivWhiteBox {
-        width: 100%;
-        max-width: 320px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
+        width: 320px;
+        margin: auto;
+        padding: 40px 30px;
         align-items: center;
-        gap: 12px;
-        align-self: stretch;
-        padding: 30px;
-
     }
 
     .mainQuestionDivWhiteBoxRed {
-        width: 100%;
-        max-width: 320px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        align-self: stretch;
-        padding: 30px;
-    }
+        width: 320px;
+        margin: auto;
+        padding: 40px 30px;
+        box-sizing: border-box;
 
-    .questionDiv {
-        width: 100%;
-        max-width: 320px;
-        margin: 0 auto;
-    }
-
-    .optionsMainDiv {
-        width: 100%;
-        max-width: 320px;
-        margin: 0 auto;
     }
 }
- */
+
+body,
+html {
+    overflow-x: hidden;
+}

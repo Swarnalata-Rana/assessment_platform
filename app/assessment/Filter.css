@@ -1,0 +1,120 @@
+.filterinside {
+    width: 284px;
+    height: 375px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px dashed #777671;
+    background: #F9F7F2;
+}
+
+.filter {
+    color: #4C4B49;
+    font-family: "Inria Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: auto;
+    width: 197px;
+    margin-top: 36px;
+}
+
+.questionScore {
+    margin: auto;
+    width: 206px;
+    margin-top: 36px;
+    color: #1F1E1C;
+    font-family: "Inria Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.questionsattempted {
+    color: #1F1E1C;
+    font-family: "Inria Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 10px;
+    width: 206px;
+    margin: auto;
+    margin-top: 48px;
+}
+
+.paginationfilterbox {
+    width: 220px;
+    margin: 16px auto 0;
+}
+
+.paginationfilterbox a {
+    padding: 10px 12px;
+    display: inline-block;
+    margin: 0 5px;
+    border: 1px solid #F4D150;
+    background: #FEEEB4;
+    color: #1F1E1C;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.paginationfilterbox a:hover {
+    color: white;
+    background-color: black;
+}
+
+.allattemtedDiv {   
+    display: flex;
+    width: 206px;
+    margin: auto;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+
+.all40 {
+    display: flex;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 54px;
+    border: 1px solid #F4D150;
+    background: #FEEEB4;
+}
+
+.attemted3 {
+    display: flex;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 54px;
+    border: 1px solid #F4D150;
+    background: #FEEEB4;
+}
+
+.Unattempted37 {
+    display: flex;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 54px;
+    border: 1px solid #F4D150;
+    background: #FEEEB4;
+    width: 206px;
+    margin: auto;
+}
+
+.all40:hover,
+.attemted3:hover,
+.Unattempted37:hover {
+    background-color: black;
+    color: white;
+}
+
+
+

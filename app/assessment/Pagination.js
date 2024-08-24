@@ -1,8 +1,8 @@
 import React from 'react'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-
-const PaginationPage = () => {
+import './Pegination.css'
+const Pagination = () => {
     return (
         <>
             <div className='mainDivPagination'>
@@ -26,4 +26,4 @@ const PaginationPage = () => {
         </>
     )
 }
-export default PaginationPage;
+export default Pagination;

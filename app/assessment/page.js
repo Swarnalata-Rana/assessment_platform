@@ -1,11 +1,12 @@
 import React from 'react'
 import './Assessment.css';
-import PaginationPage from './PaginationPage';
+import Pagination from './Pagination';
 import Filter from './Filter';
 import Question from './Question';
 import Timer from './Timer';
 import AssessmentHeader from './AssessmentHeader';
 import Submit from './Submit';
+
 const page = () => {
     return (
         <>
@@ -13,20 +14,20 @@ const page = () => {
                 <div className='paginationAssesmentHeaderComponet '>
                     <div className='paginationAssesmentComponet1'>
                         <div className='assessmentComponent'>
-                            <AssessmentHeader />
+                            {/* <AssessmentHeader /> */}
                         </div>
                         <div className='paginationComponent'>
-                            <PaginationPage />
+                            {/* <Pagination /> */}
                         </div>
                     </div>
-                    <Submit />
+                    {/* <Submit /> */}
                 </div>
                 <div className='mainwidthBgcolor'>
                     <div className='secondPageMainDiv'>
                         <div className='secondPageMainDiv1'>
                             <div className='medeaQuerryTimerFilterComponent'>
-                                <Timer />
-                                <Filter />
+                                {/* <Timer />
+                                <Filter /> */}
                             </div>
                             <div className='mainQuestionDiv'>
                                 <Question />

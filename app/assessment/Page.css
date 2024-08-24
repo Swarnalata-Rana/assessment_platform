@@ -1,0 +1,39 @@
+.paginationAssesmentHeaderComponet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 1200px;
+    height: 72px;
+}
+
+.paginationAssesmentComponet1 {
+    width: 998px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainwidthBgcolor {
+    background-color: #EBE9E6;
+}
+
+.secondPageMainDiv {
+    background-color: #EBE9E6;
+    width: 1200px;
+    margin: auto;
+}
+
+.secondPageMainDiv1 {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 894px;
+    margin-left: 103px;
+    margin-right: 203px;
+}
+
+.mainQuestionDiv {
+    width: 560px;
+    margin-top: 66px;
+}

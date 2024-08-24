@@ -1,0 +1,15 @@
+.headerDivP2 {
+    display: flex;
+    justify-content: space-between;
+    width: 112px;
+    margin: auto;
+    height: 36px;
+}
+
+.logoImgP2 {
+    width: 56px;
+}
+
+.QAdivP2 {
+    height: 29px;
+}

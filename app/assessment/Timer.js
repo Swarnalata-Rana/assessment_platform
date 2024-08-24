@@ -1,23 +1,6 @@
-// import React from 'react'
-
-// const Timer = () => {
-//     return (
-//         <>
-//             <div className='TimerSquareBOx'>
-//                 <div className='TimerCircleSquare'>
-//                     <div></div>
-//                 </div>
-//                 <div className='RemainingTimeDiv'>
-//                     Remaining Time</div>
-//             </div>
-//         </>
-//     )
-// }
-
-// export default Timer;
 
 import React from 'react';
-
+import './Timer.css'
 const Timer = () => {
     return (
         <>
