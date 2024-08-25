@@ -13,14 +13,14 @@ const page = () => {
             <div className='mainPage'>
                 <div className='paginationAssesmentHeaderComponet '>
                     <div className='paginationAssesmentComponet1'>
-                        <div className='assessmentComponent'>
-                            {/* <AssessmentHeader /> */}
+                        <div className='assessmentHeader'>
+                            <AssessmentHeader />
                         </div>
                         <div className='paginationComponent'>
-                            {/* <Pagination /> */}
+                            <Pagination />
                         </div>
                     </div>
-                    {/* <Submit /> */}
+                    <Submit />
                 </div>
                 <div className='mainwidthBgcolor'>
                     <div className='secondPageMainDiv'>
@@ -30,9 +30,9 @@ const page = () => {
                                 <Filter /> */}
                             </div>
                             <div className='mainQuestionDiv'>
+                                {/* <Question />
                                 <Question />
-                                <Question />
-                                <Question />
+                                <Question /> */}
                             </div>
                         </div>
                         <div className='gapDiv'></div>

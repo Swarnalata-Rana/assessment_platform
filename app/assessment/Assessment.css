@@ -1,22 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-/* AssessmentHeader */
-/* .headerDivP2 {
-    display: flex;
-    justify-content: space-between;
-    width: 112px;
-    margin: auto;
-    height: 36px;
-}
-
-.logoImgP2 {
-    width: 56px;
-}
-
-.QAdivP2 {
-    height: 29px;
-} */
 
 /* Page */
 .paginationAssesmentHeaderComponet {
@@ -64,26 +48,49 @@
 
 
 @media (max-width: 567px) {
-    /* .paginationAssesmentComponet {
-        width: 100%;
-        max-width: 360px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
+
+    .paginationAssesmentHeaderComponet {
+        display: inline-block;
     }
 
-    .headerDivP2 {
-        width: 100%;
-        max-width: 360px;
-        margin: 18px auto;
-        text-align: center;
+    .paginationAssesmentComponet1 {
+        display: inline-block;
+
+    }
+
+    .assessmentHeader {
+        width: 360px;
+        height: 72px;
+        border: 1px solid red;
     }
 
     .paginationComponent {
+        width: 360px;
+        height: 74px;
+        /* border: 1px solid red; */
+        background-color: #FCFAFA;
+        box-shadow: 0px 4px 3px 5px rgba(0, 0, 0, 0.10);
+    }
+
+    .headerDivP2 {
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .pagination {
+        width: 322px;
+        height: 30px;
+    }
+
+    .pagination2,
+    .pagination3,
+    .pagination4,
+    .pagination6,
+    .pagination7 {
         visibility: hidden;
-        height: 72px;
-    } */
+    }
+
 
     /* timer & filter */
     .mainwidthBgcolor {
@@ -98,51 +105,19 @@
     }
 
     .secondPageMainDiv1 {
-        width: 100%;
+        /* width: 100%;
         max-width: 360px;
-        margin: auto;
+        margin: auto; */
     }
 
     .medeaQuerryTimerFilterComponent {
-        max-width: 360px;
+        /* max-width: 360px; */
     }
 
     .TimerSquareBOx {
-        width: 100%;
+        /* width: 100%;
         max-width: 360px;
-        margin: auto;
+        margin: auto; */
     }
 
-}
-
-
-/* pagination and .assessmentHEderComponent */
-@media only screen and (max-width: 567px) {
-    .paginationAssesmentComponet {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .paginationAssesmentComponet1 {
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-    }
-
-    .assessmentComponent,
-    .paginationComponent {
-        width: 100%;
-        max-width: 360px;
-        margin: auto;
-        height: 72px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .paginationComponent {
-        height: 74px;
-        background-color: #FCFAFA;
-    }
 }

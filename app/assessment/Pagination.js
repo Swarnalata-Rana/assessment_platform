@@ -5,23 +5,19 @@ import './Pegination.css'
 const Pagination = () => {
     return (
         <>
-            <div className='mainDivPagination'>
-                <div className='paginationMain'>
-                    <div className="pagination">
-                        <a href="#" className="prev">
-                            <div className='prevArrow'><ArrowBackIosIcon /></div>
-                        </a>
-                        <a href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">7</a>
-                        <a href="#">8</a>
-                        <a href="#" className="next"><ArrowForwardIosIcon /></a>
-                    </div>
-                </div>
+            <div className="pagination">
+                <a href="#" className="prev">
+                    <div className='prevArrow'><ArrowBackIosIcon /></div>
+                </a>
+                <a className='pagination1' href="#">1</a>
+                <a className='pagination2' href="#">2</a>
+                <a className='pagination3' href="#">3</a>
+                <a className='pagination4' href="#">4</a>
+                <a className='pagination5' href="#">5</a>
+                <a className='pagination6' href="#">6</a>
+                <a className='pagination7' href="#">7</a>
+                <a className='pagination8' href="#">8</a>
+                <a href="#" className="next"><ArrowForwardIosIcon /></a>
             </div>
         </>
     )
