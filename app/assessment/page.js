@@ -20,19 +20,20 @@ const page = () => {
                             <Pagination />
                         </div>
                     </div>
-                    <Submit />
+                    <div className='sumbitComponent'><Submit /></div>
                 </div>
                 <div className='mainwidthBgcolor'>
                     <div className='secondPageMainDiv'>
                         <div className='secondPageMainDiv1'>
                             <div className='medeaQuerryTimerFilterComponent'>
-                                {/* <Timer />
-                                <Filter /> */}
+                                <div><Timer /></div>
+                                <div>FILTERS</div>
+                                {/* <Filter /> */}
                             </div>
                             <div className='mainQuestionDiv'>
-                                {/* <Question />
                                 <Question />
-                                <Question /> */}
+                                <Question />
+                                <Question />
                             </div>
                         </div>
                         <div className='gapDiv'></div>

@@ -51,32 +51,43 @@
 
     .paginationAssesmentHeaderComponet {
         display: inline-block;
+        width: 360px;
+
+        /* border: 1px solid black; */
+
+    }
+
+    .paginationAssesmentHeaderComponet1 {
+        /* width: 360px; */
+
     }
 
     .paginationAssesmentComponet1 {
         display: inline-block;
+        width: 100%;
+        /* max-width: 360px; */
 
     }
 
     .assessmentHeader {
-        width: 360px;
+        /* width: 360px; */
         height: 72px;
         border: 1px solid red;
     }
 
     .paginationComponent {
-        width: 360px;
+        /* width: 360px; */
         height: 74px;
-        /* border: 1px solid red; */
+        border: 1px solid red;
         background-color: #FCFAFA;
         box-shadow: 0px 4px 3px 5px rgba(0, 0, 0, 0.10);
     }
 
-    .headerDivP2 {
+    /* .headerDivP2 {
         justify-content: center;
         align-content: center;
 
-    }
+    } */
 
     .pagination {
         width: 322px;
@@ -91,11 +102,19 @@
         visibility: hidden;
     }
 
+    .sumbitComponent {
+        display: flex;
+        border: 1px solid red;
+        justify-content: end;
+        margin-top: 550px;
+        position: absolute;
+        margin-left: 230px;
+    }
 
     /* timer & filter */
     .mainwidthBgcolor {
         width: 100%;
-        margin: auto;
+        /* margin: auto; */
     }
 
     .secondPageMainDiv {
@@ -105,19 +124,66 @@
     }
 
     .secondPageMainDiv1 {
-        /* width: 100%;
-        max-width: 360px;
-        margin: auto; */
+        width: 320px;
+        display: flex;
+        margin: auto;
+        display: inline-block;
+
+        /* border: 1px solid red; */
+        align-items: center;
+        justify-content: space-between;
+
     }
 
     .medeaQuerryTimerFilterComponent {
-        /* max-width: 360px; */
+        /* width: 320px; */
+        display: flex;
+        border: 1px solid red;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 99px;
     }
 
+
     .TimerSquareBOx {
-        /* width: 100%;
-        max-width: 360px;
-        margin: auto; */
+
+        /* height: 100px; */
     }
+
+    .TimerCircleSquare {
+        width: 100px;
+        border: 1px solid red;
+
+    }
+
+    .circleOne {
+        border: 1px solid #EBE9E6;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: flex;
+        color: #E68086;
+        background-color: #ddd7cf;
+        box-shadow: 10px;
+    }
+
+    .circleTwo {
+        border: 1px solid #EBE9E6;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        display: flex;
+        background-color: white;
+    }
+
+    .filterMainDiv {
+        display: none;
+    }
+
+    .RemainingTimeDiv {
+        display: none;
+    }
+
+    /* timer */
 
 }

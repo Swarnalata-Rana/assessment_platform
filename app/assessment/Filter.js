@@ -3,7 +3,7 @@ import './Filter.css'
 const Filter = () => {
     return (
         <>
-            <div className='filterinside'>
+            <div className='filterMainDiv'>
                 <div className='filter'>FILTERS</div>
                 <p className='questionScore'>Question Score</p>
                 <div class="paginationfilterbox">
