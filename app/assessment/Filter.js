@@ -22,6 +22,7 @@ const Filter = () => {
                 </div>
                 <div className='Unattempted37'>Unattempted (37)</div>
             </div>
+            <div className='filterMobileview'>FILTERS</div>
         </>
     )
 }

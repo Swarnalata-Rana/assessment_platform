@@ -1,0 +1,69 @@
+.mainDivPagination {
+    background-color: white;
+}
+
+.mainDivPagination1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 1200px;
+    height: 72px;
+}
+
+.paginationMain {
+    display: flex;
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    gap: 8px;
+}
+
+
+.pagination div {
+    color: black;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.pagination div:hover:not(.active) {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    background-color: #FEEEB4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#prevArrow {
+    margin-left: 8px;
+}
+
+
+#threedot {
+    display: none; /* Hide by default */
+}
+
+@media (max-width: 567px) {
+    #threedot {
+        
+        display: inline; /* Show only in 360px viewport */
+    }
+   
+    
+}

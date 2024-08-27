@@ -45,78 +45,85 @@
 
 
 
-
-
 @media (max-width: 567px) {
 
     .paginationAssesmentHeaderComponet {
         display: inline-block;
         width: 360px;
-
-        /* border: 1px solid black; */
+        width: 100%;
 
     }
 
     .paginationAssesmentHeaderComponet1 {
-        /* width: 360px; */
+        width: 360px;
+        margin: auto;
+        width: 100%;
 
+
+    }
+
+    .mainPage {
+        width: 100%;
+        max-width: 360px;
     }
 
     .paginationAssesmentComponet1 {
         display: inline-block;
-        width: 100%;
-        /* max-width: 360px; */
+        width: 360px;
 
     }
 
     .assessmentHeader {
-        /* width: 360px; */
+        width: 360px;
         height: 72px;
         border: 1px solid red;
     }
 
     .paginationComponent {
-        /* width: 360px; */
+        width: 360px;
         height: 74px;
         border: 1px solid red;
         background-color: #FCFAFA;
         box-shadow: 0px 4px 3px 5px rgba(0, 0, 0, 0.10);
     }
 
-    /* .headerDivP2 {
-        justify-content: center;
-        align-content: center;
-
-    } */
-
+    /* pagination */
     .pagination {
-        width: 322px;
-        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 74px;
+        gap: 28px;
     }
 
-    .pagination2,
-    .pagination3,
-    .pagination4,
-    .pagination6,
-    .pagination7 {
-        visibility: hidden;
+    #paginations {
+        display: none;
+    }
+
+    #paginations:nth-child(2),
+    #paginations:nth-child(7),
+    #paginations:nth-child(11) {
+        display: inline-block;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .threedot {
+        display:inline;
     }
 
     .sumbitComponent {
         display: flex;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         justify-content: end;
         margin-top: 550px;
         position: absolute;
-        margin-left: 230px;
+        width: 340px;
     }
 
     /* timer & filter */
-    .mainwidthBgcolor {
-        width: 100%;
-        /* margin: auto; */
-    }
-
     .secondPageMainDiv {
         width: 100%;
         max-width: 360px;
@@ -124,58 +131,35 @@
     }
 
     .secondPageMainDiv1 {
-        width: 320px;
+        width: 360px;
         display: flex;
         margin: auto;
         display: inline-block;
 
-        /* border: 1px solid red; */
         align-items: center;
         justify-content: space-between;
 
     }
 
     .medeaQuerryTimerFilterComponent {
-        /* width: 320px; */
-        display: flex;
+        width: 320px;
+        margin: auto;
         border: 1px solid red;
         align-items: center;
-        justify-content: space-between;
         margin-top: 99px;
     }
 
-
-    .TimerSquareBOx {
-
-        /* height: 100px; */
+    .TimerFilterDiv {
+        display: flex;
+        justify-content: space-between;
     }
 
     .TimerCircleSquare {
-        width: 100px;
         border: 1px solid red;
 
     }
 
-    .circleOne {
-        border: 1px solid #EBE9E6;
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        display: flex;
-        color: #E68086;
-        background-color: #ddd7cf;
-        box-shadow: 10px;
-    }
-
-    .circleTwo {
-        border: 1px solid #EBE9E6;
-        height: 60px;
-        width: 60px;
-        border-radius: 50%;
-        display: flex;
-        background-color: white;
-    }
-
+    /* fiter */
     .filterMainDiv {
         display: none;
     }
@@ -183,7 +167,8 @@
     .RemainingTimeDiv {
         display: none;
     }
-
-    /* timer */
+    .filterMobileview{
+        display: inline;
+    }
 
 }

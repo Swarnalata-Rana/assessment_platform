@@ -62,3 +62,36 @@
     line-height: 160%;
     text-align: center;
 }
+
+@media (max-width: 567px) {
+
+        .circleOne {
+        border: 1px solid #EBE9E6;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: flex;
+        color: #E68086;
+        background-color: #ddd7cf;
+        box-shadow: 10px;
+    }
+
+    .circleTwo {
+        border: 1px solid #EBE9E6;
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+        display: flex;
+        background-color: white;
+    }
+    .TimerText {
+        font-size: 18px;
+        font-weight: bold;
+        /* margin-bottom: 5px; */
+    }
+    .nimSec {
+        color: black;
+        font-size: 12px;
+    }
+    
+}

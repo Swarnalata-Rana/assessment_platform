@@ -10,36 +10,40 @@ import Submit from './Submit';
 const page = () => {
     return (
         <>
-            <div className='mainPage'>
-                <div className='paginationAssesmentHeaderComponet '>
-                    <div className='paginationAssesmentComponet1'>
-                        <div className='assessmentHeader'>
-                            <AssessmentHeader />
-                        </div>
-                        <div className='paginationComponent'>
-                            <Pagination />
-                        </div>
-                    </div>
-                    <div className='sumbitComponent'><Submit /></div>
-                </div>
-                <div className='mainwidthBgcolor'>
-                    <div className='secondPageMainDiv'>
-                        <div className='secondPageMainDiv1'>
-                            <div className='medeaQuerryTimerFilterComponent'>
-                                <div><Timer /></div>
-                                <div>FILTERS</div>
-                                {/* <Filter /> */}
+
+            <div>
+                <div className='mainPage'>
+                    <div className='paginationAssesmentHeaderComponet '>
+                        <div className='paginationAssesmentComponet1'>
+                            <div className='assessmentHeader'>
+                                <AssessmentHeader />
                             </div>
-                            <div className='mainQuestionDiv'>
-                                <Question />
-                                <Question />
-                                <Question />
+                            <div className='paginationComponent'>
+                                <Pagination />
                             </div>
                         </div>
-                        <div className='gapDiv'></div>
+                        <div className='sumbitComponent'><Submit /></div>
                     </div>
-                </div>
-            </div >
+                    <div className='mainwidthBgcolor'>
+                        <div className='secondPageMainDiv'>
+                            <div className='secondPageMainDiv1'>
+                                <div className='medeaQuerryTimerFilterComponent'>
+                                   <div className='TimerFilterDiv'>
+                                   <Timer />
+                                   <Filter />
+                                   </div>
+                                </div>
+                                <div className='mainQuestionDiv'>
+                                    <Question />
+                                    <Question />
+                                    <Question />
+                                </div>
+                            </div>
+                            <div className='gapDiv'></div>
+                        </div>
+                    </div>
+                </div >
+            </div>
         </>
     )
 }

@@ -116,5 +116,7 @@
     color: white;
 }
 
-
+.filterMobileview{
+    display: none;
+}
 
