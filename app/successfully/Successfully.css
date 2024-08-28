@@ -61,26 +61,18 @@
 .ckeckScore {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	gap: 10px;
 	border-radius: 4px;
 	border: 2px solid #F4D150;
 	background: #FEEEB4;
 	box-shadow: 0px 4px 7px 0px #B3AE9C;
-	max-width: 250px;
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
+	width: 222px;
+	margin: auto;
 	margin-bottom: 108px;
 	margin-top: 98px;
-
 }
 
 .scoreATag {
-	display: inline-block;
 	width: 152px; 																																															
-	text-align: center;
-	justify-content: center;
 	text-decoration: none;
 	color: #1F1E1C;																																																																																																					
 	height: 54px;
@@ -102,12 +94,11 @@
 		}
 
 		.gapDiv4 {
-			height: 54px;
+			height: 0px;
 		}
 
 		.whiteBoxSuccessfully {
-			width: 100%;
-			max-width: 320px;
+			width: 320px;
 			height: 422px;
 			flex-shrink: 0;
 			margin: auto;
@@ -150,6 +141,6 @@
 		}
 
 		.gapDiv2 {
-			height: 75px;
+			height: 35px;
 		}
 	}

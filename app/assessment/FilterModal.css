@@ -1,13 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 .filterModalDiv {
     display: none;
 
 }
-
-
-/* .FilterElement {
-    width: 55px;
-    border: solid red 1px;
-} */
 
 @media(max-width:567px) {
     .filterModalDiv {
@@ -25,8 +22,6 @@
     }
 
     .linemainDiv {
-        /* border: 1px solid red; */
-        /* height: 29px; */
         width: 23px;
     }
 
@@ -40,7 +35,6 @@
         width: 13px;
         border: 1px solid #777671;
         margin-top: 5px;
-
     }
 
     .line3 {

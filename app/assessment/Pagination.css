@@ -18,19 +18,15 @@
 
 .pagination {
     display: flex;
-    gap: 8px;
+    gap:16px;
 }
 
 
 .pagination div {
     color: black;
-    padding: 10px 14px;
+    line-height: 30px;
     border: 1px solid #ddd;
-    margin: 0 4px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 30px;
     height: 30px;
     text-align: center;

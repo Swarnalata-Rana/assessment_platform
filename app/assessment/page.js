@@ -21,7 +21,11 @@ const page = () => {
                             <Pagination />
                         </div>
                     </div>
-                    <div className='sumbitComponent'><Submit /></div>
+                    <div className='sumbitComponent'>
+                        <div className='submitDiv'>
+                            <a className='submit' href='successfully'>Submit</a>
+                        </div>
+                    </div>
                 </div>
                 <div className='mainwidthBgcolor'>
                     <div className='secondPageMainDiv'>
@@ -30,7 +34,7 @@ const page = () => {
                                 <div className='TimerFilterDiv'>
                                     <Timer />
                                     <Filter />
-                                    <FilterModal/>
+                                    <FilterModal />
                                 </div>
                             </div>
                             <div className='mainQuestionDiv'>

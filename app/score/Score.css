@@ -294,7 +294,7 @@
         box-sizing: border-box;
     }
 
-    .mainQuestionDiv {
+    /* .mainQuestionDiv {
         width: 100%;
         max-width: 320px;
         box-sizing: border-box;
@@ -304,7 +304,7 @@
         width: 100%;
         max-width: 314px;
         box-sizing: border-box;
-    }
+    } */
 
     .mainQuestionDivWhiteBox {
         width: 320px;
