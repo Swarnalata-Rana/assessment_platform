@@ -13,7 +13,7 @@
 }
 
 .paginationAssesmentComponet1 {
-    width: 998px;
+    width: 997px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,15 +51,12 @@
         display: inline-block;
         width: 360px;
         width: 100%;
-
     }
 
     .paginationAssesmentHeaderComponet1 {
         width: 360px;
         margin: auto;
-        width: 100%;
-
-
+        width: 100%
     }
 
     .mainPage {
@@ -70,7 +67,6 @@
     .paginationAssesmentComponet1 {
         display: inline-block;
         width: 360px;
-
     }
 
     .assessmentHeader {
@@ -89,11 +85,9 @@
 
     /* pagination */
     .pagination {
-        display: flex;
         justify-content: center;
         align-items: center;
         height: 74px;
-        gap: 28px;
     }
 
     #paginations {
@@ -110,13 +104,18 @@
 
     }
 
-    .threedot {
-        display:inline;
+    #threedot {
+        border: none;
+    }
+
+    .threedotP {
+        justify-content: center;
+        display: flex;
+        margin-top: -10px;
     }
 
     .sumbitComponent {
         display: flex;
-        /* border: 1px solid red; */
         justify-content: end;
         margin-top: 550px;
         position: absolute;
@@ -125,20 +124,13 @@
 
     /* timer & filter */
     .secondPageMainDiv {
-        width: 100%;
-        max-width: 360px;
-        margin: auto;
+        width: 360px;
     }
 
     .secondPageMainDiv1 {
         width: 360px;
-        display: flex;
         margin: auto;
         display: inline-block;
-
-        align-items: center;
-        justify-content: space-between;
-
     }
 
     .medeaQuerryTimerFilterComponent {
@@ -146,17 +138,17 @@
         margin: auto;
         border: 1px solid red;
         align-items: center;
-        margin-top: 99px;
+        margin-top: 42px;
     }
 
     .TimerFilterDiv {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .TimerCircleSquare {
         border: 1px solid red;
-
     }
 
     /* fiter */
@@ -167,8 +159,19 @@
     .RemainingTimeDiv {
         display: none;
     }
-    .filterMobileview{
-        display: inline;
+
+    .filterMobileview {
+        display: block;
     }
 
+    .FilterMobileView {
+        border: 1px solid red;
+        height: 50px;
+        width: 40px;
+        display: block;
+    }
+
+    .filterMainDiv {
+        display: none;
+    }
 }

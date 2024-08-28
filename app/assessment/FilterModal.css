@@ -1,0 +1,52 @@
+.filterModalDiv {
+    display: none;
+
+}
+
+
+/* .FilterElement {
+    width: 55px;
+    border: solid red 1px;
+} */
+
+@media(max-width:567px) {
+    .filterModalDiv {
+        display: inline;
+        width: 110px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 6px;
+        border: 2px solid #E0DFDA;
+        background-color: #FCFAFA;
+        padding: 10px;
+        gap: 12px;
+
+    }
+
+    .linemainDiv {
+        /* border: 1px solid red; */
+        /* height: 29px; */
+        width: 23px;
+    }
+
+    .line1 {
+        width: 16px;
+        height: 0px;
+        border: 1px solid #777671;
+    }
+
+    .line2 {
+        width: 13px;
+        border: 1px solid #777671;
+        margin-top: 5px;
+
+    }
+
+    .line3 {
+        width: 10px;
+        border: 1px solid #777671;
+        margin-top: 5px;
+
+    }
+}

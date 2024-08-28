@@ -62,7 +62,7 @@
 @media (max-width: 567px) {
     #threedot {
         
-        display: inline; /* Show only in 360px viewport */
+        display: inline; 
     }
    
     
