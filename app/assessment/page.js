@@ -41,6 +41,8 @@ const page = () => {
                                 <Question />
                                 <Question />
                                 <Question />
+                                <Question />
+                                <Question />
                             </div>
                         </div>
                         <div className='gapDiv'></div>

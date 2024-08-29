@@ -19,6 +19,7 @@
 .pagination {
     display: flex;
     gap:16px;
+    font-size: 14px;
 }
 
 
@@ -44,6 +45,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width:28px;
+    height: 28px;
 }
 
 #prevArrow {

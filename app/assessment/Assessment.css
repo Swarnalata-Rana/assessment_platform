@@ -43,13 +43,16 @@
     margin-top: 66px;
 }
 .submitDiv {
-    padding: 16px 35px;
+    display: flex;
     border-radius: 4px;
     border: 2px solid #F4D150;
     background: #FEEEB4;
     box-shadow: 0px 4px 7px 0px #B3AE9C;
     width: 130px;
     height: 54px;
+    line-height: 54px;
+    justify-content: center;
+
 }
 .submit {
     font-family: "Inter", sans-serif;
@@ -95,13 +98,13 @@
         height: 74px;
     }
 
-    #paginations {
+   .paginations {
         display: none;
     }
 
-    #paginations:nth-child(2),
-    #paginations:nth-child(7),
-    #paginations:nth-child(11) {
+    .paginations:nth-child(2),
+    .paginations:nth-child(7),
+    .paginations:nth-child(11) {
         display: inline-block;
         display: flex;
         text-align: center;
