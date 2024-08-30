@@ -122,8 +122,8 @@
         display: flex;
         justify-content: end;
         margin-top: 550px;
-        position: absolute;
-        width: 340px;
+        position: fixed;
+        width: 360px;
     }
 
     .secondPageMainDiv {
