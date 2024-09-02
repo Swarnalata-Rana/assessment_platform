@@ -8,6 +8,7 @@
 
 .mainScoreDiv {
     background-color: #EBE9E6;
+    /* border: 1px solid red; */
 }
 
 .gapDiv0 {
@@ -72,7 +73,7 @@
     font-family: "Inria Sans";
     font-size: 16px;
     font-weight: 700;
-    margin-top: 139px;
+    margin-top: 67px;
 }
 
 .lineScore {
@@ -150,7 +151,6 @@
     padding: 40px;
     border: 1px solid green;
     margin-left: 35px;
-
 }
 
 .mainQuestionDivWhiteBoxRed {
@@ -207,6 +207,11 @@
 }
 
 @media (max-width: 567px) {
+    .mainScoreDiv {
+        background-color: #EBE9E6;
+        /* border: 1px solid red;
+        width: 100%; */
+    }
     .blackDivBox {
         height: 218px;
         width: 320px;
@@ -273,7 +278,7 @@
         width: 320px;
         margin: auto;
         margin-top: 30px;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
 
     }
 
@@ -286,25 +291,13 @@
 
     .lineScore1 {
         width: 321px;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
     }
 
     .mainLastPage {
         width: 320px;
         box-sizing: border-box;
     }
-
-    /* .mainQuestionDiv {
-        width: 100%;
-        max-width: 320px;
-        box-sizing: border-box;
-    }
-
-    .mainQuestionDiv1 {
-        width: 100%;
-        max-width: 314px;
-        box-sizing: border-box;
-    } */
 
     .mainQuestionDivWhiteBox {
         width: 320px;
