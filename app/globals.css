@@ -41,6 +41,8 @@
 /* InstructionPage*/
 .instructionDivmain {
     background: #EBE9E6;
+    padding-bottom: 120px;
+
 }
 
 .MCQh2 {
@@ -244,6 +246,7 @@
         width: 280px;
         margin: auto;
         margin-right: 4px;
+        /* line-height: 150%; */
     }
 
     .ulTag li {

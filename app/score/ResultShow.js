@@ -2,7 +2,8 @@ import React from 'react'
 
 const ResultShow = () => {
     return (
-        <div>
+
+        <>
             <div className='gapDiv0'></div>
             <div className='blackDivBox'>
                 <div className='mainTag35yourScored'>
@@ -26,7 +27,7 @@ const ResultShow = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

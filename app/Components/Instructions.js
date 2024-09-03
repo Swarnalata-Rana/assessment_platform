@@ -46,7 +46,7 @@ const Instructions = () => {
                         <a className='LetsStart' href='assessment'>Lets Start!</a>
                     </div>
                 </div>
-                <div className='gapDiv'></div>
+                {/* <div className='gapDiv'></div> */}
             </div>
         </>
     )

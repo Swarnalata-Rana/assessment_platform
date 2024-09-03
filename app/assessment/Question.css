@@ -163,6 +163,8 @@
     display: flex;
     justify-content: space-between;
     width: 560px;
+    padding-top: 40px;
+
 }
 
 .mainQuestionDivWhiteBox {
@@ -171,6 +173,8 @@
     margin: auto;
     border-radius: 12px;
     padding: 40px;
+    /* padding-top: 20px; */
+
 }
 
 .question {

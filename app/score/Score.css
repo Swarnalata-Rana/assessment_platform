@@ -8,6 +8,7 @@
 
 .mainScoreDiv {
     background-color: #EBE9E6;
+    padding-bottom: 300px;
     /* border: 1px solid red; */
 }
 
@@ -29,6 +30,7 @@
     text-align: center;
     gap: 33px;
     display: flex;
+    /* margin-top: 20px; */
 }
 
 .elementBox {
@@ -205,7 +207,6 @@
 .options input[type="radio"] {
     margin-right: 10px;
 }
-
 @media (max-width: 567px) {
     .mainScoreDiv {
         background-color: #EBE9E6;

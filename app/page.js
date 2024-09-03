@@ -8,6 +8,7 @@ const page = () => {
       <div className=''>
         <Instructions/>
       </div>
+      
     </>
   )
 }

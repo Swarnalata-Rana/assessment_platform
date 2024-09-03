@@ -5,10 +5,7 @@ import ResultShow from './ResultShow';
 const Score = () => {
     return (
         <>
-            {/* <div className=''> */}
             <Header />
-            {/* </div> */}
-            {/* <div className='main'> */}
             <div className='mainScoreDiv'>
                 <div>
                     <ResultShow />
@@ -236,10 +233,7 @@ const Score = () => {
                     <div className='lineScore1'></div>
                     <div className='gapAssessment'></div>
                 </div>
-
-                <div className='gapDiv2'></div>
             </div>
-            {/* </div> */}
         </>
     )
 }

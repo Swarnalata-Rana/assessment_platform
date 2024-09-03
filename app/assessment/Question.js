@@ -32,7 +32,7 @@ const Question = () => {
                     </ul>
                 </div>
             </div>
-            <div className='gapAssessment'></div>
+            {/* <div className='gapAssessment'></div> */}
 
         </>
     )

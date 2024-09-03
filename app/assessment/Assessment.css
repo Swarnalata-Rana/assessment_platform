@@ -21,6 +21,7 @@
 
 .mainwidthBgcolor {
     background-color: #EBE9E6;
+    padding-bottom: 150px;
 }
 
 .secondPageMainDiv {
@@ -37,10 +38,12 @@
     margin-left: 103px;
     margin-right: 203px;
 }
-
+.TimerFilterDiv{
+    width: 283px;
+}
 .mainQuestionDiv {
     width: 560px;
-    margin-top: 66px;
+    margin-top: 20px;
 }
 .submitDiv {
     display: flex;
@@ -68,6 +71,7 @@
     .paginationAssesmentHeaderComponet {
         display: inline-block;
         width: 100%;
+        height: auto;
     }
 
     .paginationAssesmentHeaderComponet1 {
@@ -119,20 +123,16 @@
     }
 
     .sumbitComponent {
-        display: flex;
-        justify-content: end;
-        margin-top: 460px;
         position: fixed;
-        width: 340px;
+        right: 20px;
     }
 
     .secondPageMainDiv {
         width: 360px;
-        margin-top: 18px;
     }
 
     .secondPageMainDiv1 {
-        width: 360px;
+        width: 100%;
         margin: auto;
         display: inline-block;
     }
