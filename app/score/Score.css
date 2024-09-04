@@ -9,7 +9,7 @@
 .mainScoreDiv {
     background-color: #EBE9E6;
     padding-bottom: 300px;
-    /* border: 1px solid red; */
+    padding-top: 40px;
 }
 
 .gapDiv0 {
@@ -127,7 +127,8 @@
     height: 1px;
     margin: auto;
     background: #8F887C;
-    gap: 20px;
+    margin-top: 30px;
+    /* gap: 20px; */
 }
 
 .mainLastPage {
@@ -200,9 +201,9 @@
     margin-left: 8px;
 }
 
-.gapAssessment {
+/* .gapAssessment {
     height: 53px;
-}
+} */
 
 .options input[type="radio"] {
     margin-right: 10px;

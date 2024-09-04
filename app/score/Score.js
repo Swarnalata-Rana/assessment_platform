@@ -7,9 +7,7 @@ const Score = () => {
         <>
             <Header />
             <div className='mainScoreDiv'>
-                <div>
-                    <ResultShow />
-                </div>
+                <ResultShow />
                 <div className='checkYourAns'>CHECK YOUR ANSWERS</div>
                 <div className='lineScore'></div>
 
@@ -50,7 +48,6 @@ const Score = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className='gapAssessment'></div>
                 </div>
 
                 <div className='mainLastPage'>
@@ -91,7 +88,6 @@ const Score = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className='gapAssessment'></div>
 
                 </div>
                 <div className='lineScore1'></div>
@@ -100,39 +96,6 @@ const Score = () => {
                         <img className='rightImg' src='wrong.png' />
                         <p>00</p>
                         <p>Q3</p>
-                    </div>
-                    <div className='plusImg'>
-                        <img src='Plus.png' />
-                    </div>
-                </div>
-                <div className='lineScore1'></div>
-                <div className='scoreCurrectMaoinDiv'>
-                    <div className='right10PlusMainDiv'>
-                        <img className='rightImg' src='Check.png' />
-                        <p>10</p>
-                        <p>Q4</p>
-                    </div>
-                    <div className='plusImg'>
-                        <img src='Plus.png' />
-                    </div>
-                </div>
-                <div className='lineScore1'></div>
-                <div className='scoreCurrectMaoinDiv'>
-                    <div className='right10PlusMainDiv'>
-                        <img className='rightImg' src='Check.png' />
-                        <p>10</p>
-                        <p>Q5</p>
-                    </div>
-                    <div className='plusImg'>
-                        <img src='Plus.png' />
-                    </div>
-                </div>
-                <div className='lineScore1'></div>
-                <div className='scoreCurrectMaoinDiv'>
-                    <div className='right10PlusMainDiv'>
-                        <img className='rightImg' src='Check.png' />
-                        <p>10</p>
-                        <p>Q6</p>
                     </div>
                     <div className='plusImg'>
                         <img src='Plus.png' />
@@ -231,7 +194,6 @@ const Score = () => {
                         </div>
                     </div>
                     <div className='lineScore1'></div>
-                    <div className='gapAssessment'></div>
                 </div>
             </div>
         </>

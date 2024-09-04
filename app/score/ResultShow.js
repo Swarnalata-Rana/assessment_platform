@@ -4,7 +4,6 @@ const ResultShow = () => {
     return (
 
         <>
-            <div className='gapDiv0'></div>
             <div className='blackDivBox'>
                 <div className='mainTag35yourScored'>
                     <p className='Tag35'>35/40</p>

@@ -8,7 +8,6 @@ const page = () => {
                 <Header />
             </div>
                 <div className='successfullyMainDiv'>
-                    <div className='gapDiv4'></div>
                     <div className='whiteBoxSuccessfully'>
                             <div className='maindivSuccessfully'>
                                 <div className='rightDivTag'>
@@ -25,7 +24,6 @@ const page = () => {
                                 <a className='scoreATag' href='score'>Check Your Score</a>
                             </div>
                     </div>
-                    <div className='gapDiv2'></div>
                 </div>
         </>
     )

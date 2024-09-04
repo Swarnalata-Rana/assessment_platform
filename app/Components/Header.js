@@ -4,11 +4,12 @@ const Header = () => {
     return (
         <>
             <div className='headerDiv'>
-                <img className='logoImg' src='LogoGrp.png' />
-                <img className='QAdiv' src='QA.png' />
+                <div className='headerDiv1'>
+                    <img className='logoImg' src='LogoGrp.png' />
+                    <p className='QAdiv' >QA</p>
+                </div>
             </div>
         </>
     )
 }
-
 export default Header;
