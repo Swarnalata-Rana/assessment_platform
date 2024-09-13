@@ -11,13 +11,7 @@
     height: 72px;
 }
 
-.paginationMain {
-    display: flex;
-    align-items: center;
-}
-
 .pagination {
-    display: flex;
     gap:16px;
     font-size: 14px;
 }

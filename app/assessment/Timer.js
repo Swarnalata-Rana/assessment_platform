@@ -9,7 +9,7 @@ const Timer = () => {
                     <div className='circleTwo'>
                         <div className='TimerText'>30:
                             00</div>
-                        <div className='nimSec'>nims sec</div>
+                        <div className='nimSec'>mins sec</div>
                     </div>
                 </div>
                 <div className='RemainingTimeDiv'>

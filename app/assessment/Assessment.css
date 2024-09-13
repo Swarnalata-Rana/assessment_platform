@@ -98,6 +98,7 @@
         justify-content: center;
         align-items: center;
         height: 74px;
+        gap: 26px;
     }
 
    .paginations {
@@ -108,9 +109,6 @@
     .paginations:nth-child(7),
     .paginations:nth-child(11) {
         display: inline-block;
-        display: flex;
-        text-align: center;
-        justify-content: center;
 
     }
 
@@ -123,7 +121,7 @@
     .sumbitComponent {
         position: fixed;
         right: 20px;
-        top: 300px;
+        bottom: 520px;
     }
 
     .secondPageMainDiv {
@@ -146,6 +144,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
     }
 
     .TimerCircleSquare {
