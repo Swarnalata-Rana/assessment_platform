@@ -43,14 +43,23 @@
 
 }
 
-.nimSec {
+.minSec {
     color: black;
+    width: 74px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .TimerText {
-    font-size: 24px;
+    font-size: 23px;
     font-weight: bold;
     margin-bottom: 5px;
+    display: flex;
+    width: 74px;
+    justify-content: space-between;
+}
+.colonBlck{
+    color: #1F1E1C;
 }
 
 .RemainingTimeDiv {
@@ -75,8 +84,8 @@
     }
 
     .circleTwo {
-        height: 80px;
-        width: 80px;
+        height: 85px;
+        width: 85px;
         border-radius: 50%;
         display: flex;
     }
@@ -84,11 +93,12 @@
     .TimerText {
         font-size: 18px;
         font-weight: bold;
+        width: 60px;
     }
 
-    .nimSec {
-        color: black;
+    .minSec {
         font-size: 12px;
+        width: 60px;
     }
 
     .TimerSquareBox {
