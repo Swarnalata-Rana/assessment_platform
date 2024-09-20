@@ -22,10 +22,13 @@
 
     .linemainDiv {
         width: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .line1 {
-        width: 16px;
+        width: 20px;
         height: 0px;
         border: 1px solid #777671;
     }
@@ -37,9 +40,17 @@
     }
 
     .line3 {
-        width: 10px;
+        width: 7px;
         border: 1px solid #777671;
         margin-top: 5px;
 
+    }
+
+    .FilterElement {
+        font-family: "Inria Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 }
