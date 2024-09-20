@@ -14,7 +14,6 @@ const Filter = () => {
                 </div>
                 <div>
                     <p className='questionsattempted'>Questions Attempted</p>
-
                 </div>
                 <div className='allattemtedDiv'>
                     <p className='all40'>All(40)</p>

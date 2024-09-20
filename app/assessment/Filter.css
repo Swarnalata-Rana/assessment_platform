@@ -8,6 +8,7 @@
     border-radius: 12px;
     border: 1px dashed #777671;
     background: #F9F7F2;
+    margin-top: 20px;
 }
 
 .filter {
@@ -67,6 +68,7 @@
 .paginationfilterbox a:hover {
     color: white;
     background-color: black;
+    border: none;
 }
 
 .allattemtedDiv {   
@@ -117,6 +119,7 @@
 .Unattempted37:hover {
     background-color: black;
     color: white;
+    border: none;
 }
 
 .filterMobileview{

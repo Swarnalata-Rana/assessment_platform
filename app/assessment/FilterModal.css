@@ -28,19 +28,19 @@
     }
 
     .line1 {
-        width: 20px;
+        width: 25px;
         height: 0px;
         border: 1px solid #777671;
     }
 
     .line2 {
-        width: 13px;
+        width: 20px;
         border: 1px solid #777671;
         margin-top: 5px;
     }
 
     .line3 {
-        width: 7px;
+        width: 14px;
         border: 1px solid #777671;
         margin-top: 5px;
 

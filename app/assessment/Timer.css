@@ -2,12 +2,12 @@
     height: 180px;
     width: 150px;
     margin: auto;
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    bottom: 47px;
+    /* bottom: 47px; */
 }
 
 .TimerCircleSquare {
@@ -102,7 +102,7 @@
     .TimerSquareBox {
 
         /* border: red 1px solid; */
-        height: 180px;
+        height: 146px;
         width: auto;
         margin-top: 0px;
         margin: 0px;
