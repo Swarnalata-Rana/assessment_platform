@@ -53,7 +53,7 @@
 /* InstructionPage*/
 .instructionDivmain {
     background: #EBE9E6;
-    padding-bottom: 120px;
+    padding-bottom: 143px;
 
 }
 
@@ -62,14 +62,14 @@
     font-family: "Inter";
     font-size: 24px;
     font-weight: 600;
-    line-height: 150px;
     color: #4C4B49;
+    padding-top: 55px;
+    padding-bottom: 19px;
 }
 
 .whiteBox {
     width: 705px;
     margin: auto;
-    margin-top: -30px;
     background-color: #F9F7F2;
 }
 
@@ -199,10 +199,12 @@
 
     .MCQh2 {
         font-size: 24px;
+        padding-top: 34px;
     }
 
     .instructionDivmain {
         width: 100%;
+        padding-bottom: 80px;
         margin: auto;
     }
 
@@ -210,7 +212,6 @@
         width: 100%;
         max-width: 320px;
         margin: auto;
-        margin-top: -34px;
     }
 
     .instructions {
@@ -219,6 +220,9 @@
         width: 100%;
         max-width: 280px;
         margin: auto;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        line-height: 0;
     }
 
     .paragrap {
