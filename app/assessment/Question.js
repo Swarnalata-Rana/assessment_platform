@@ -19,7 +19,7 @@ const Question = () => {
                         </li>
                         <li>
                             <input type="radio" className='redio' id="london" name="capital" value="london" />
-                            <label for="london">Tarapore Committee</label>
+                            <label for="london">Radha Krishnan Committee </label>
                         </li>
                         <li>
                             <input type="radio" className='redio' id="rome" name="capital" value="rome" />

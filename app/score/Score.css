@@ -107,7 +107,10 @@
     justify-content: center;
     align-items: center;
 }
-
+.right10PlusMainDiv p {
+    font-family: "Inter";
+    font-weight: 600;
+}
 .plusImg {
     width: 28px;
     height: 28px;
@@ -211,12 +214,13 @@
 @media (max-width: 567px) {
     .mainScoreDiv {
         background-color: #EBE9E6;
-        /* border: 1px solid red;
-        width: 100%; */
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     .blackDivBox {
         height: 218px;
-        width: 320px;
+        width: 100%;
         display: block;
         padding: 0;
         box-sizing: border-box;
@@ -265,7 +269,7 @@
     }
 
     .checkYourAns {
-        width: 321px;
+        width: 100%;
         margin: auto;
         color: #1F1E1C;
         margin-top: 71px;
@@ -277,7 +281,7 @@
     }
 
     .lineScore {
-        width: 320px;
+        width: 100%;
         margin: auto;
         margin-top: 30px;
         /* box-sizing: border-box; */
@@ -285,31 +289,31 @@
     }
 
     .scoreCurrectMaoinDiv {
-        width: 321px;
+        width: 100%;
         margin-top: 31px;
         box-sizing: border-box;
 
     }
 
     .lineScore1 {
-        width: 321px;
+        width: 100%;
         /* box-sizing: border-box; */
     }
 
     .mainLastPage {
-        width: 320px;
+        width: 100%;
         box-sizing: border-box;
     }
 
     .mainQuestionDivWhiteBox {
-        width: 320px;
+        width: 100%;
         margin: auto;
         padding: 40px 30px;
         align-items: center;
     }
 
     .mainQuestionDivWhiteBoxRed {
-        width: 320px;
+        width: 100%;
         margin: auto;
         padding: 40px 30px;
         box-sizing: border-box;

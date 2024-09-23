@@ -3,8 +3,8 @@
 
 .successfullyMainDiv {
 	background-color: #EBE9E6;
-	padding-bottom: 400px;
-    padding-top: 70px;
+	padding-bottom: 428px;
+    padding-top: 103px;
 }
 
 .gapDiv4 {
@@ -57,7 +57,7 @@
 	font-family: Inter;
 	font-size: 14px;
 	margin: auto;
-	width: 319px;
+	width: 100%;
 }
 
 .ckeckScore {
@@ -89,7 +89,8 @@
 		.successfullyMainDiv {
 			width: 100%;
 			padding-bottom: 100px;
-			
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 
 		.gapDiv4 {
@@ -97,10 +98,11 @@
 		}
 
 		.whiteBoxSuccessfully {
-			width: 320px;
+			width: 100%;
 			height: 422px;
 			flex-shrink: 0;
 			margin: auto;
+			
 		}
 
 		.successfullyDiv {
@@ -108,6 +110,7 @@
 			font-family: Inter, sans-serif;
 			font-size: 24px;
 			font-weight: 600;
+			width: 100%;
 		}
 
 		.h6 {

@@ -49,6 +49,7 @@
 .paginationfilterbox {
     width: 220px;
     margin: 16px auto 0;
+    font-weight: 600;
 }
 
 .paginationfilterbox a {
@@ -77,6 +78,9 @@
     margin: auto;
     margin-top: 16px;
     justify-content: space-between;
+    font-weight: 400;
+    font-family: "Inria Sans";
+    color: #1F1E1C;
 }
 
 .all40 {
@@ -112,6 +116,7 @@
     background: #FEEEB4;
     width: 160px;
     margin-left: 38px;
+    margin-top: -8px;
 }
 
 .all40:hover,

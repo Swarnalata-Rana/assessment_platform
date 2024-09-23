@@ -104,7 +104,9 @@
     }
 
     .secondPageMainDiv {
-        width: 360px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .secondPageMainDiv1 {
@@ -114,7 +116,7 @@
     }
 
     .medeaQuerryTimerFilterComponent {
-        width: 320px;
+        width: 100%;
         margin: auto;
         align-items: center;
     }

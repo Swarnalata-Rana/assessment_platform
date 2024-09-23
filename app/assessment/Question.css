@@ -93,19 +93,16 @@
 @media (max-width:567px) {
     .mainQuestionDiv {
         width: 100%;
-        max-width: 320px;
         margin: auto;
     }
 
     .mainQuestionDiv1 {
         width: 100%;
-        max-width: 314px;
         margin: auto;
     }
 
     .mainQuestionDivWhiteBox {
         width: 100%;
-        max-width: 320px;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -116,19 +113,16 @@
 
     .questionDiv {
         width: 100%;
-        max-width: 320px;
         margin: auto;
     }
 
     .options {
         width: 100%;
-        max-width: 320px;
         margin: auto;
     }
 
     .optionsMainDiv {
         width: 100%;
-        max-width: 320px;
         margin: auto;
     }
 }
