@@ -1,4 +1,3 @@
-import React from 'react'
 import './Question.css'
 const Question = () => {
     return (
@@ -19,7 +18,7 @@ const Question = () => {
                         </li>
                         <li>
                             <input type="radio" className='redio' id="london" name="capital" value="london" />
-                            <label for="london">Radha Krishnan Committee </label>
+                            <label for="london">Radha Krishnan Committee</label>
                         </li>
                         <li>
                             <input type="radio" className='redio' id="rome" name="capital" value="rome" />
@@ -36,4 +35,7 @@ const Question = () => {
     )
 }
 
-export default Question;
+export default Question;import React from 'react';
+
+
+

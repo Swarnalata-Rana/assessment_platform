@@ -66,7 +66,7 @@
     "regions": [],
     "isNiche": false
   },
-  {
+  { 
     "category": "arts_and_literature",
     "id": "63afff982d1dcedfbb654568",
     "correctAnswer": "The Tempest",
@@ -216,3 +216,4 @@
     "isNiche": false
   }
 ]
+

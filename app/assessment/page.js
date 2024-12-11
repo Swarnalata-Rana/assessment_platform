@@ -8,25 +8,12 @@ import AssessmentHeader from './AssessmentHeader';
 import Submit from './Submit';
 import FilterModal from './FilterModal';
 
+
 const page = () => {
     return (
         <>
             <div className='mainPage'>
-                <div className='paginationAssesmentHeaderComponet '>
-                    <div className='paginationAssesmentComponet1'>
-                        <div className='assessmentHeader'>
-                            <AssessmentHeader />
-                        </div>
-                        <div className='paginationComponent'>
-                            <Pagination />
-                        </div>
-                    </div>
-                    <div className='sumbitComponent'>
-                        <div className='submitDiv'>
-                            <a className='submit' href='successfully'>Submit</a>
-                        </div>
-                    </div>
-                </div>
+                <AssessmentHeader/>
                 <div className='mainwidthBgcolor'>
                     <div className='secondPageMainDiv'>
                         <div className='secondPageMainDiv1'>
@@ -53,3 +40,7 @@ const page = () => {
 }
 
 export default page;
+
+
+
+
