@@ -28,7 +28,7 @@ const Score = () => {
                             <p> Which of the following committees recommended inclusion of fundamental duties ?</p>
                         </div>
                         <div className='optionsMainDiv'>
-                            <ul class="options">
+                            <ul className="options">
                                 <li>
                                     <input type="radio" />
                                     <label for="paris">Tarapore Committee</label>
@@ -163,7 +163,7 @@ const Score = () => {
                             <p> Which of the following committees recommended inclusion of fundamental duties ?</p>
                         </div>
                         <div className='optionsMainDiv'>
-                            <ul class="options">
+                            <ul className="options">
                                 <li>
                                     <input type="radio" />
                                     <label for="paris">Tarapore Committee</label>
