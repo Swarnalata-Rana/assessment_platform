@@ -75,7 +75,10 @@
     background-color: black;
     border: none;
 }
-
+.selectedFilter {
+    background-color: black; /* Selected button's background color */
+    color: white; /* Text color when button is selected */
+}
 .allattemtedDiv {   
     display: flex;
     width: 206px;
@@ -140,3 +143,4 @@
     color: white;
     border: none;
 }
+
