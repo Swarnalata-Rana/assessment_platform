@@ -9,7 +9,10 @@ import FilterModal from './FilterModal';
 
 const Page = () => {
     const [questions, setQuestions] = useState([]);//displaed 40 question with options
-    
+    const [currentPage, setCurrentPage] = useState(1);//work for pagination 1 to ...8 page tk
+
+    const questionsPerPage = 5;
+    //fecth the data
     useEffect(() => {
         fetch('https://the-trivia-api.com/v2/questions?limit=40')
             .then((res) => res.json())
@@ -19,9 +22,13 @@ const Page = () => {
             .catch((err) => console.error("Error:", err));
     }, []);
 
+    //pagination
+    const startIndex = (currentPage - 1) * questionsPerPage;
+    const currentQuestions = questions.slice(startIndex, startIndex + questionsPerPage);
+
     return (
         <div className='mainPage'>
-            <AssessmentHeader />
+            <AssessmentHeader setCurrentPage={setCurrentPage} />
             <div className='mainwidthBgcolor'>
                 <div className='secondPageMainDiv'>
                     <div className='secondPageMainDiv1'>
@@ -36,10 +43,11 @@ const Page = () => {
                             </div>
                         </div>
                         <div className='mainQuestionDiv'>
-                            {questions.map((data, idx) => (
+                            {currentQuestions.map((data, index) => (
                                 <Question
+                                    key={index}
                                     data={data}
-                                    index={idx}
+                                    index={startIndex + index}
                                 />
                             ))}
                         </div>

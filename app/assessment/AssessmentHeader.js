@@ -1,7 +1,8 @@
 import React from 'react';
 import './AssessmentHeader.css';
 import Pagination from './Pagination';
-const AssessmentHeader = () => {
+
+const AssessmentHeader = ({setCurrentPage}) => {
     return (
         <>
             <div className='paginationAssesmentHeaderComponet '>
@@ -14,7 +15,7 @@ const AssessmentHeader = () => {
                             </div>
                         </div>
                     </div>
-                    <Pagination/>
+                    <Pagination  setCurrentPage={setCurrentPage}/>
                 </div>
                 <div className='sumbitComponent'>
                     <div className='submitDiv'>
