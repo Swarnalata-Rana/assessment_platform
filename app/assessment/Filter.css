@@ -51,7 +51,11 @@
     margin: 16px auto 0;
     font-weight: 600;
 }
-
+.selectedButton {
+    background-color: black;
+    color: white; 
+    border: none;  /* To ensure border doesn't show on selected state */
+}
 .paginationfilterbox button {
     padding: 10px 12px;
     display: inline-block;
@@ -116,18 +120,23 @@
     background: #FEEEB4;
     width: 160px;
     margin-left: 38px;
-    margin-top: -8px;
+    margin-top: 8px;
 }
 
-.all40:hover,
+/* .all40:hover,
 .attemted3:hover,
 .Unattempted37:hover {
     background-color: black;
     color: white;
     border: none;
-}
+} */
 
 .filterMobileview{
     display: none;
 }
 
+.activeButton {
+    background-color: black;
+    color: white;
+    border: none;
+}

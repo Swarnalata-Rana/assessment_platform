@@ -26,13 +26,14 @@
     width: 30px;
     height: 30px;
     text-align: center;
+    cursor: pointer;
 }
 
-.pagination div:hover:not(.active) {
+/* .pagination div:hover:not(.active) {
     background-color: black;
     color: white;
     cursor: pointer;
-}
+} */
 
 .prev,
 .next {
@@ -42,6 +43,7 @@
     justify-content: center;
     width: 28px;
     height: 28px;
+    cursor: pointer;
 }
 
 #prevArrow {
@@ -84,4 +86,8 @@
 
     }
 
+}
+.paginations.active {
+    background-color: black;
+    color: white;
 }

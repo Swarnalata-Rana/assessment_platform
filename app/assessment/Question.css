@@ -82,10 +82,13 @@
     margin-left: 8px;
 }
 
-.redio {
+.radio {
     margin-right: 10px;
+    cursor: pointer;
 }
-
+.labelTag{
+    cursor: pointer;
+}
 .gapAssessment {
     height: 40px;
 }

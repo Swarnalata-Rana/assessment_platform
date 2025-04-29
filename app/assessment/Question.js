@@ -1,9 +1,79 @@
-import './Question.css'
+// "use client";
 
-const Question = ({ data, index }) => {
+// import React, { useState, useEffect } from 'react';
+// import './Question.css';
 
-    const options = [data.correctAnswer, ...data.incorrectAnswers]
-    const suffuleOptions = options.sort(() => Math.random() - 0.5)
+// const Question = ({ data, index, onAttempt }) => {
+//     const [shuffledOptions, setShuffledOptions] = useState([]);
+//     const [selectedOption, setSelectedOption] = useState(null); // Track which option is selected
+
+//     useEffect(() => {
+//         const options = [data.correctAnswer, ...data.incorrectAnswers];
+//         const shuffled = options.sort(() => Math.random() - 0.5);
+//         setShuffledOptions(shuffled);
+//         setSelectedOption(null); // Reset selection when question changes
+//     }, [data]);
+
+//     const handleOptionSelect = (e) => {
+//         setSelectedOption(e.target.value);
+//         onAttempt(data.id); // Pass the question ID (not index)
+//     };
+
+//     return (
+//         <>
+//             <div className='mainQuestionDiv1'>
+//                 <h4 className='Question1'>QUESTION {index + 1}</h4>
+//                 <p className='score1'>
+//                     Score {data.difficulty === 'easy' ? 10 : data.difficulty === 'medium' ? 15 : 20}
+//                 </p>
+//             </div>
+//             <div className='mainQuestionDivWhiteBox'>
+//                 <div className='questionDiv'>
+//                     {data.question.text}
+//                 </div>
+//                 <div className='optionsMainDiv'>
+//                     <ul className="options">
+//                         {shuffledOptions.map((option, i) => (
+//                             <li key={i}>
+//                                 <input
+//                                     type='radio'
+//                                     className='radio'
+//                                     id={`option-${index}-${i}`}
+//                                     name={`question-${index}`}
+//                                     value={option}
+//                                     // checked={selectedOption === option}
+//                                     onChange={handleOptionSelect}
+//                                 />
+//                                 <label htmlFor={`option-${index}-${i}`}>{option}</label>
+//                             </li>
+//                         ))}
+//                     </ul>
+//                 </div>
+//             </div>
+//         </>
+//     );
+// };
+
+// export default Question;
+
+
+"use client";
+
+import React, { useState, useEffect } from 'react';
+import './Question.css';
+
+const Question = ({ data, index, onAttempt, selectedOption }) => {
+    const [shuffledOptions, setShuffledOptions] = useState([]);
+
+    useEffect(() => {
+        const options = [data.correctAnswer, ...data.incorrectAnswers];
+        const shuffled = options.sort(() => Math.random() - 0.5);
+        setShuffledOptions(shuffled);
+    }, [data]);
+
+    const handleOptionSelect = (e) => {
+        onAttempt(data.id, e.target.value); // Send questionId and selected option to parent
+    };
 
     return (
         <>
@@ -18,45 +88,26 @@ const Question = ({ data, index }) => {
                     {data.question.text}
                 </div>
                 <div className='optionsMainDiv'>
-                    <ul class="options">
-
-                        {suffuleOptions.map((option, i) => (
+                    <ul className="options">
+                        {shuffledOptions.map((option, i) => (
                             <li key={i}>
                                 <input
                                     type='radio'
-                                    className='redio'
+                                    className='radio'
                                     id={`option-${index}-${i}`}
-                                    name={`question-${index}`}
+                                    name={`question-${data.id}`} // Important: use question id not index
                                     value={option}
+                                    checked={selectedOption === option} // Maintain selected option
+                                    onChange={handleOptionSelect}
                                 />
-                                <label htmlFor={`option-${index}-${i}`}>{option}</label>
+                                <label className='labelTag' htmlFor={`option-${index}-${i}`}>{option}</label>
                             </li>
                         ))}
-
-                        {/* <li>
-                            <input type="radio" className='redio' id="paris" name="capital" value="paris" />
-                            <label className='answer' for="paris">{suffuleOption}</label>
-                        </li>
-                        <li>
-                            <input type="radio" className='redio' id="london" name="capital" value="london" />
-                            <label for="london">{suffuleOption}</label>
-                        </li>
-                        <li>
-                            <input type="radio" className='redio' id="rome" name="capital" value="rome" />
-                            <label for="rome">{suffuleOption}</label>
-                        </li>
-                        <li>
-                            <input type="radio" className='redio' id="berlin" name="capital" value="berlin" />
-                            <label for="berlin">{suffuleOption}</label>
-                        </li> */}
                     </ul>
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default Question; import React from 'react';
-
-
-
+export default Question;

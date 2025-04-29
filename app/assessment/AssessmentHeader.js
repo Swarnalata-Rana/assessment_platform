@@ -32,7 +32,7 @@ import React from 'react';
 import './AssessmentHeader.css';
 import Pagination from './Pagination';
 
-const AssessmentHeader = ({ setCurrentPage }) => {
+const AssessmentHeader = ({ setCurrentPage, activePage, setActivePage  }) => {
     return (
         <>
             <div className='paginationAssesmentHeaderComponet'>
@@ -45,7 +45,7 @@ const AssessmentHeader = ({ setCurrentPage }) => {
                             </div>
                         </div>
                     </div>
-                    <Pagination setCurrentPage={setCurrentPage} />
+                    <Pagination setCurrentPage={setCurrentPage} activePage={activePage} setActivePage={setActivePage} />
                 </div>
                 <div className='sumbitComponent'>
                     <div className='submitDiv'>
