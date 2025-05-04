@@ -50,3 +50,5 @@ const Pagination = ({ setCurrentPage }) => {
 }
 export default Pagination;
 
+
+

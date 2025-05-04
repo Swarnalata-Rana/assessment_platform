@@ -2,7 +2,10 @@
 import React, { useState } from 'react';
 import './Filter.css';
 
-const Filter = ({ allQuestions, setQuestions, setCurrentPage }) => {
+const Filter = ({ allQuestions, setQuestions, setCurrentPage, attemptedCount,attemptedQuestions}) => {
+
+    const unattemptedCount = allQuestions.length - attemptedCount;
+
 
     function handleFilter(score) {
         setCurrentPage(1);
@@ -30,6 +33,20 @@ const Filter = ({ allQuestions, setQuestions, setCurrentPage }) => {
     }
 
 
+    function handleAttemptedFilter() {
+        setCurrentPage(1);
+        // setActiveButton('Attempted')
+        const filtered = allQuestions.filter(q => attemptedQuestions.includes(q.id));
+        setQuestions(filtered);
+    }
+
+    function handleUnattemptedFilter() {
+        setCurrentPage(1);
+        // setActiveButton('Unattempted')
+        const filtered = allQuestions.filter(q => !attemptedQuestions.includes(q.id));
+        setQuestions(filtered);
+    }
+
     return (
         <div className='filterMainDiv'>
             <div className='filter'>FILTERS</div>
@@ -45,11 +62,11 @@ const Filter = ({ allQuestions, setQuestions, setCurrentPage }) => {
                 <p className='questionsattempted'>Questions Attempted</p>
             </div>
             <div className='allattemtedDiv'>
-                <button className='all40'>All(40)</button>
-                <button className='attemted3'>Attempted(3)</button>
+                <button className='all40' onClick={() => handleFilter('All')}>All({allQuestions.length})</button>
+                <button className='attemted3'onClick={handleAttemptedFilter}>Attempted({attemptedCount})</button>
             </div>
 
-            <button className='Unattempted37'>Unattempted(37)</button>
+            <button className='Unattempted37' onClick={handleUnattemptedFilter}>Unattempted({unattemptedCount})</button>
 
         </div>
     );
