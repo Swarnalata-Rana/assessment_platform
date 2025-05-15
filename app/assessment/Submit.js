@@ -1,11 +1,13 @@
 import React from 'react'
 import './Submit.css'
-const Submit = () => {
+const Submit = ({onSubmit}) => {
     return (
         <>
-            {/* <div className='submitDiv'>
-                <a className='submit' href='successfully'>Submit</a>
-            </div> */}
+            <div className='sumbitComponent'>
+                <div className='submitDiv'>
+                    <a className='submit' href='successfully' onClick={onSubmit}>Submit</a>
+                </div>
+            </div>
         </>
     )
 }

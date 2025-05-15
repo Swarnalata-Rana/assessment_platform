@@ -1,8 +1,9 @@
 import React from 'react';
 import './AssessmentHeader.css';
 import Pagination from './Pagination';
+import Submit from './Submit';
 
-const AssessmentHeader = ({setCurrentPage}) => {
+const AssessmentHeader = ({setCurrentPage,totalPages,setActivePage,activePage,onSubmit}) => {
     return (
         <>
             <div className='paginationAssesmentHeaderComponet '>
@@ -15,13 +16,14 @@ const AssessmentHeader = ({setCurrentPage}) => {
                             </div>
                         </div>
                     </div>
-                    <Pagination  setCurrentPage={setCurrentPage}/>
+                    <Pagination  setCurrentPage={setCurrentPage}setActivePage={setActivePage} activePage={activePage} totalPages={totalPages}/>
                 </div>
-                <div className='sumbitComponent'>
+                {/* <div className='sumbitComponent'>
                     <div className='submitDiv'>
                         <a className='submit' href='successfully'>Submit</a>
                     </div>
-                </div>
+                </div> */}
+                <Submit onSubmit={onSubmit}/>
             </div>
         </>
     )
