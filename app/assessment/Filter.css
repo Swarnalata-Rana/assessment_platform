@@ -56,7 +56,7 @@
     color: white; 
     border: none;  /* To ensure border doesn't show on selected state */
 }
-.paginationfilterbox button {
+.scoreBtn {
     padding: 10px 12px;
     display: inline-block;
     margin: 0 5px;
@@ -90,7 +90,7 @@
     color: #1F1E1C;
 }
 
-.all40 {
+.questionAtm {
     display: flex;
     padding: 6px 12px;
     justify-content: center;
@@ -101,7 +101,7 @@
     background: #FEEEB4;
 }
 
-.attemted3 {
+/* .attemted3 {
     display: flex;
     padding: 6px 12px;
     justify-content: center;
@@ -110,7 +110,7 @@
     border-radius: 54px;
     border: 1px solid #F4D150;
     background: #FEEEB4;
-}
+} */
 
 .Unattempted37 {
     display: flex;

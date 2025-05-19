@@ -3,7 +3,7 @@ import './AssessmentHeader.css';
 import Pagination from './Pagination';
 import Submit from './Submit';
 
-const AssessmentHeader = ({setCurrentPage,totalPages,setActivePage,activePage,onSubmit}) => {
+const AssessmentHeader = ({setCurrentPage,totalPages,currentPage,onSubmit}) => {
     return (
         <>
             <div className='paginationAssesmentHeaderComponet '>
@@ -16,13 +16,8 @@ const AssessmentHeader = ({setCurrentPage,totalPages,setActivePage,activePage,on
                             </div>
                         </div>
                     </div>
-                    <Pagination  setCurrentPage={setCurrentPage}setActivePage={setActivePage} activePage={activePage} totalPages={totalPages}/>
+                    <Pagination  setCurrentPage={setCurrentPage} currentPage={currentPage} totalPages={totalPages}/>
                 </div>
-                {/* <div className='sumbitComponent'>
-                    <div className='submitDiv'>
-                        <a className='submit' href='successfully'>Submit</a>
-                    </div>
-                </div> */}
                 <Submit onSubmit={onSubmit}/>
             </div>
         </>

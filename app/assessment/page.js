@@ -8,18 +8,16 @@ import AssessmentHeader from './AssessmentHeader';
 import FilterModal from './FilterModal';
 
 const Page = () => {
+    const [allQuestions, setAllQuestions] = useState([]);//work for filter its a master copy data
     const [questions, setQuestions] = useState([]);//used for displaying and changing.
     const [currentPage, setCurrentPage] = useState(1);//work for pagination 1 to ...8 page tk
-    const [allQuestions, setAllQuestions] = useState([]);//work for filter its a master copy data
     const [attemptedCount, setAttemptedCount] = useState(0);//work how many attempt count
     const [attemptedQuestions, setAttemptedQuestions] = useState([]);//workstore the attemppt question
     const [selectedOptions, setSelectedOptions] = useState({}); // Track selected options for each question
     const [score, setScore] = useState({});
-    const [activePage, setActivePage] = useState(1);//work for bg color
 
     const questionsPerPage = 5;
 
-    //fecth the data n
     useEffect(() => {
         fetch('https://the-trivia-api.com/v2/questions?limit=40')
             .then((res) => res.json())
@@ -33,7 +31,7 @@ const Page = () => {
     //pagination
     const startIndex = (currentPage - 1) * questionsPerPage;
     const currentQuestions = questions.slice(startIndex, startIndex + questionsPerPage);
-    const totalPages = Math.ceil(questions.length / questionsPerPage); //when user ckick any filter score at that time need page only display
+    const totalPages = Math.ceil(questions.length / questionsPerPage); 
 
 
     //Filter
@@ -77,14 +75,10 @@ const Page = () => {
             }
         });
 
-        // const totalQuestions = questions.length;
-        // const attempted = Object.keys(selectedOptions).length;
-        // const unattempted = totalQuestions - attempted;
-
         setScore({ correctCount, wrongCount });
 
         alert(
-            `Score:${correctCount}/40\n Unattempted: ${unattemptedCount}\n Correct: ${correctCount}\n Incorrect: ${wrongCount}`
+            `Score:0/ ${correctCount}\n Unattempted: ${unattemptedCount}\n Correct: ${correctCount}\n Incorrect: ${wrongCount}`
         );
     };
 
@@ -95,8 +89,7 @@ const Page = () => {
             <AssessmentHeader
                 setCurrentPage={setCurrentPage}
                 totalPages={totalPages}
-                setActivePage={setActivePage}
-                activePage={activePage}
+                currentPage={currentPage}
                 onSubmit={handleSubmit}
             />
             <div className='mainwidthBgcolor'>
@@ -109,8 +102,6 @@ const Page = () => {
                                     setQuestions={setQuestions}
                                     allQuestions={allQuestions}
                                     setCurrentPage={setCurrentPage}
-                                    // activePage={activePage}
-                                    setActivePage={setActivePage}
                                     attemptedCount={attemptedCount}
                                     unattemptedCount={unattemptedCount}
                                     attemptedQuestions={attemptedQuestions}
