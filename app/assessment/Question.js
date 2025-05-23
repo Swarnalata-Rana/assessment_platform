@@ -1,21 +1,13 @@
 "use client"
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Question.css';
 
 const Question = ({ data, index, onAttempt }) => {
-    const [shuffledOptions, setShuffledOptions] = useState([]);
 
-    useEffect(() => {
-        const options = [data.correctAnswer, ...data.incorrectAnswers];
-        const shuffled = [...options].sort(() => Math.random() - 0.5);
-        setShuffledOptions(shuffled);
-    }, []);
-
-    const handleChange = (e) => {
+    const handleOptionSelect = (e) => {
         const selectedOption = e.target.value;
-        onAttempt(data.id, selectedOption); 
+        onAttempt(data.id, selectedOption);
     };
-
 
     return (
         <>
@@ -31,23 +23,22 @@ const Question = ({ data, index, onAttempt }) => {
                 </div>
                 <div className='optionsMainDiv'>
                     <ul className='options'>
-                        {shuffledOptions.map((option, i) => (
+                        {data.options.map((option, i) => (
                             <li key={i}>
-
                                 <input
                                     type='radio'
                                     className='radio'
                                     id={`option-${index}-${i}`}
                                     name={`question-${data.id}`}
                                     value={option}
-                                    onChange={handleChange}
+                                    onChange={handleOptionSelect}
                                     checked={data.selectedOption === option}
                                 />
-
                                 <label className='labelTag' htmlFor={`option-${index}-${i}`}>{option}</label>
                             </li>
                         ))}
                     </ul>
+
                 </div>
             </div>
         </>

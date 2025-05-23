@@ -16,11 +16,22 @@ const Page = () => {
         fetch('https://the-trivia-api.com/v2/questions?limit=40')
             .then((res) => res.json())
             .then((data) => {
-                setQuestions(data);
-                setAllQuestions(data);
-            })
-            .catch((err) => console.error("Error:", err));
+                const updatedData = data.map((question) => {
+                    const options = [question.correctAnswer, ...question.incorrectAnswers];
+                    const shuffled = [...options].sort(() => Math.random() - 0.5);
+                    return {
+                        ...question,
+                        options: shuffled,
+                        selectedOption: '',
+                    };
+                });
+
+
+                setAllQuestions(updatedData);
+                setQuestions(updatedData);
+            });
     }, []);
+
 
     const startIndex = (currentPage - 1) * 5;
     const currentQuestions = questions.slice(startIndex, startIndex + 5);
@@ -35,8 +46,6 @@ const Page = () => {
                 return question;
             }
         });
-        console.log(updatedAllQuestions.find(q => q.id === questionId));
-
         setAllQuestions(updatedAllQuestions);
         setQuestions(updatedAllQuestions);
     };
@@ -75,7 +84,6 @@ const Page = () => {
                                         data={data}
                                         index={originalIndex}
                                         onAttempt={handleAttempt}
-                                        selectedOption={data.selectedOption}
                                     />
                                 );
                             })}
