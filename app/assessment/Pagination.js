@@ -13,7 +13,6 @@ const Pagination = ({ setCurrentPage, totalPages, currentPage }) => {
     const handlePrev = () => {
         setCurrentPage(prev => {
             const newPage = Math.max(prev - 1, 1);
-            setActivePage(newPage);
             return newPage;
         });
     };
@@ -21,7 +20,6 @@ const Pagination = ({ setCurrentPage, totalPages, currentPage }) => {
     const handleNext = () => {
         setCurrentPage(next => {
             const newPage = Math.min(next + 1, 8);
-            setActivePage(newPage);
             return newPage;
         });
     };

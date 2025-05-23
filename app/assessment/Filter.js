@@ -7,11 +7,11 @@ const Filter = ({
     setQuestions,
     setCurrentPage,
     attemptedCount,
-    attemptedQuestions,
-    unattemptedCount
+    unattemptedCount,
 }) => {
     const [activeScoreButton, setActiveScoreButton] = useState("All");
     const [activeAttemptedButton, setActiveAttemptedButton] = useState("All");
+    
 
     function handleFilter(score) {
         setCurrentPage(1);
@@ -32,25 +32,27 @@ const Filter = ({
         }
     }
 
+    function handleAttemptAllFilter() {
+        setCurrentPage(1);
+        setActiveAttemptedButton("All");
+        setQuestions(allQuestions);
+    }
+    
     function handleAttemptedFilter() {
         setCurrentPage(1);
         setActiveAttemptedButton("Attempted");
-
-        const filtered = allQuestions.filter((q) =>
-            attemptedQuestions.includes(q.id)
-        );
+        const filtered = allQuestions.filter((q) => q.selectedOption);
         setQuestions(filtered);
     }
 
     function handleUnattemptedFilter() {
         setCurrentPage(1);
         setActiveAttemptedButton("Unattempted");
-
-        const filtered = allQuestions.filter(
-            (q) => !attemptedQuestions.includes(q.id)
-        );
-        setQuestions(filtered);
+        const filtered = allQuestions.filter((q) => !q.selectedOption); 
+        setQuestions(filtered); 
     }
+
+
 
     return (
         <div className="filterMainDiv">
@@ -83,7 +85,7 @@ const Filter = ({
                 >
                     20
                 </button>
-            </div>
+            </div> 
 
             <div>
                 <p className="questionsattempted">Questions Attempted</p>
@@ -91,13 +93,13 @@ const Filter = ({
 
             <div className="allattemtedDiv">
                 <button
-                    className={`questionAtm ${activeAttemptedButton === 'All' ? "activeButton" : ""}`}
-                    onClick={() => handleFilter("All")}
+                    className={`questionAttempted ${activeAttemptedButton === 'All' ? "activeButton" : ""}`}
+                    onClick={() => handleAttemptAllFilter("All")}
                 >
                     All({allQuestions.length})
                 </button>
                 <button
-                    className={`questionAtm ${activeAttemptedButton === "Attempted" ? "activeButton" : ""
+                    className={`questionAttempted ${activeAttemptedButton === "Attempted" ? "activeButton" : ""
                         }`}
                     onClick={handleAttemptedFilter}
                 >

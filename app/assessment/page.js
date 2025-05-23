@@ -8,15 +8,9 @@ import AssessmentHeader from './AssessmentHeader';
 import FilterModal from './FilterModal';
 
 const Page = () => {
-    const [allQuestions, setAllQuestions] = useState([]);//work for filter its a master copy data
-    const [questions, setQuestions] = useState([]);//used for displaying and changing.
-    const [currentPage, setCurrentPage] = useState(1);//work for pagination 1 to ...8 page tk
-    const [attemptedCount, setAttemptedCount] = useState(0);//work how many attempt count
-    const [attemptedQuestions, setAttemptedQuestions] = useState([]);//workstore the attemppt question
-    const [selectedOptions, setSelectedOptions] = useState({}); // Track selected options for each question
-    const [score, setScore] = useState({});
-
-    const questionsPerPage = 5;
+    const [allQuestions, setAllQuestions] = useState([]);
+    const [questions, setQuestions] = useState([]);
+    const [currentPage, setCurrentPage] = useState(1);
 
     useEffect(() => {
         fetch('https://the-trivia-api.com/v2/questions?limit=40')
@@ -28,58 +22,23 @@ const Page = () => {
             .catch((err) => console.error("Error:", err));
     }, []);
 
-    //pagination
-    const startIndex = (currentPage - 1) * questionsPerPage;
-    const currentQuestions = questions.slice(startIndex, startIndex + questionsPerPage);
-    const totalPages = Math.ceil(questions.length / questionsPerPage); 
+    const startIndex = (currentPage - 1) * 5;
+    const currentQuestions = questions.slice(startIndex, startIndex + 5);
+    const totalPages = Math.ceil(questions.length / 5);
 
-
-    //Filter
-    const unattemptedCount = allQuestions.length - attemptedCount;
     const handleAttempt = (questionId, selectedOption) => {
-        // Separate the variables first
-        const newAttemptedQuestions = [...attemptedQuestions];
-        const newSelectedOptions = { ...selectedOptions };
-
-        // Update attempted questions and count if not already attempted
-        if (!newAttemptedQuestions.includes(questionId)) {
-            newAttemptedQuestions.push(questionId);
-            setAttemptedCount(attemptedCount + 1); // Increment attemt question 
-        }
-
-        // Store the selected option for the question. when user click the attempt btn at that time its display
-        newSelectedOptions[questionId] = selectedOption;
-
-        // Update state using the variables
-        setAttemptedQuestions(newAttemptedQuestions);
-        setSelectedOptions(newSelectedOptions);
-    };
-
-    const handleSubmit = () => {
-        let correctCount = 0;
-        let wrongCount = 0;
-
-        questions.forEach((question) => {
-            const selected = selectedOptions[question.id];
-            const correct = question.correctAnswer;
-
-            console.log(`Q: ${question.question.text}`);
-            console.log(`Selected: ${selected}, Correct: ${correct}`);
-
-            if (selected) {
-                if (selected === correct) {
-                    correctCount++;
-                } else {
-                    wrongCount++;
-                }
+        const updatedAllQuestions = allQuestions.map((question) => {
+            if (question.id === questionId) {
+                return { ...question, selectedOption };
+            }
+            else {
+                return question;
             }
         });
+        console.log(updatedAllQuestions.find(q => q.id === questionId));
 
-        setScore({ correctCount, wrongCount });
-
-        alert(
-            `Score:0/ ${correctCount}\n Unattempted: ${unattemptedCount}\n Correct: ${correctCount}\n Incorrect: ${wrongCount}`
-        );
+        setAllQuestions(updatedAllQuestions);
+        setQuestions(updatedAllQuestions);
     };
 
 
@@ -90,7 +49,7 @@ const Page = () => {
                 setCurrentPage={setCurrentPage}
                 totalPages={totalPages}
                 currentPage={currentPage}
-                onSubmit={handleSubmit}
+            // onSubmit={handleSubmit}
             />
             <div className='mainwidthBgcolor'>
                 <div className='secondPageMainDiv'>
@@ -102,24 +61,24 @@ const Page = () => {
                                     setQuestions={setQuestions}
                                     allQuestions={allQuestions}
                                     setCurrentPage={setCurrentPage}
-                                    attemptedCount={attemptedCount}
-                                    unattemptedCount={unattemptedCount}
-                                    attemptedQuestions={attemptedQuestions}
                                 />
                                 <FilterModal
                                 />
                             </div>
                         </div>
                         <div className='mainQuestionDiv'>
-                            {currentQuestions.map((data, index) => (
-                                <Question
-                                    key={index}
-                                    data={data}
-                                    index={startIndex + index}
-                                    onAttempt={handleAttempt}
-                                    selectedOption={selectedOptions[data.id]} // Pass selected option for each question
-                                />
-                            ))}
+                            {currentQuestions.map((data, index) => {
+                                const originalIndex = allQuestions.findIndex(q => q.id === data.id);
+                                return (
+                                    <Question
+                                        key={index}
+                                        data={data}
+                                        index={originalIndex}
+                                        onAttempt={handleAttempt}
+                                        selectedOption={data.selectedOption}
+                                    />
+                                );
+                            })}
                         </div>
                     </div>
                 </div>
