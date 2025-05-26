@@ -25,13 +25,10 @@ const Page = () => {
                         selectedOption: '',
                     };
                 });
-
-
                 setAllQuestions(updatedData);
                 setQuestions(updatedData);
             });
     }, []);
-
 
     const startIndex = (currentPage - 1) * 5;
     const currentQuestions = questions.slice(startIndex, startIndex + 5);
@@ -50,7 +47,10 @@ const Page = () => {
         setQuestions(updatedAllQuestions);
     };
 
-
+    const attemptedCount = allQuestions.filter(function (question) {
+        return question.selectedOption !== '';
+    }).length;
+    const unattemptedCount = allQuestions.length - attemptedCount;
 
     return (
         <div className='mainPage'>
@@ -68,20 +68,24 @@ const Page = () => {
                                 <Timer />
                                 <Filter
                                     setQuestions={setQuestions}
-                                    allQuestions={allQuestions}
+                                    allQuestions={questions}
                                     setCurrentPage={setCurrentPage}
+                                    attemptedCount={attemptedCount}
+                                    unattemptedCount={unattemptedCount}
                                 />
                                 <FilterModal
                                 />
                             </div>
                         </div>
                         <div className='mainQuestionDiv'>
-                            {currentQuestions.map((data, index) => {
-                                const originalIndex = allQuestions.findIndex(q => q.id === data.id);
+                            {currentQuestions.map((questionObj, index) => {
+                                const originalIndex = allQuestions.findIndex(function (q) {
+                                    return q.id === questionObj.id;
+                                });
                                 return (
                                     <Question
                                         key={index}
-                                        data={data}
+                                        questionBoj={questionObj}
                                         index={originalIndex}
                                         onAttempt={handleAttempt}
                                     />
