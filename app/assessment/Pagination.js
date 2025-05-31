@@ -6,23 +6,24 @@ import './Pagination.css'
 
 const Pagination = ({ setCurrentPage, totalPages, currentPage }) => {
 
-    const handlePageClick = (pageNo) => {
+    function handlePageClick(pageNo) {
         setCurrentPage(pageNo);
-    };
+    }
 
-    const handlePrev = () => {
-        setCurrentPage(prev => {
+    function handlePrev() {
+        setCurrentPage(function (prev) {
             const newPage = Math.max(prev - 1, 1);
             return newPage;
         });
-    };
+    }
 
-    const handleNext = () => {
-        setCurrentPage(next => {
+    function handleNext() {
+        setCurrentPage(function (next) {
             const newPage = Math.min(next + 1, 8);
             return newPage;
         });
-    };
+    }
+
 
     return (
         <>

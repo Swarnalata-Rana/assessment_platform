@@ -2,11 +2,11 @@
 import React from 'react';
 import './Question.css';
 
-const Question = ({ questionBoj, index, onAttempt }) => {
+const Question = ({ questionObj, index, onAttempt }) => {
 
     const handleOptionSelect = (e) => {
         const selectedOption = e.target.value;
-        onAttempt(questionBoj.id, selectedOption);
+        onAttempt(questionObj.id, selectedOption);
     };
 
     return (
@@ -14,25 +14,25 @@ const Question = ({ questionBoj, index, onAttempt }) => {
             <div className='mainQuestionDiv1'>
                 <h4 className='Question1'>QUESTION {index + 1}</h4>
                 <p className='score1'>
-                    Score {questionBoj.difficulty === 'easy' ? 10 : questionBoj.difficulty === 'medium' ? 15 : 20}
+                    Score {questionObj.difficulty === 'easy' ? 10 : questionObj.difficulty === 'medium' ? 15 : 20}
                 </p>
             </div>
             <div className='mainQuestionDivWhiteBox'>
                 <div className='questionDiv'>
-                    {questionBoj.question.text}
+                    {questionObj.question.text}
                 </div>
                 <div className='optionsMainDiv'>
                     <ul className='options'>
-                        {questionBoj.options.map((option, i) => (
+                        {questionObj.options.map((option, i) => (
                             <li key={i}>
                                 <input
                                     type='radio'
                                     className='radio'
                                     id={`option-${index}-${i}`}
-                                    name={`question-${questionBoj.id}`}
+                                    name={`question-${questionObj.id}`}
                                     value={option}
                                     onChange={handleOptionSelect}
-                                    checked={questionBoj.selectedOption === option}
+                                    checked={questionObj.selectedOption === option}
                                 />
                                 <label className='labelTag' htmlFor={`option-${index}-${i}`}>{option}</label>
                             </li>

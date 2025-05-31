@@ -47,10 +47,33 @@ const Page = () => {
         setQuestions(updatedAllQuestions);
     };
 
-    const attemptedCount = allQuestions.filter(function (question) {
-        return question.selectedOption !== '';
-    }).length;
+    // const attemptedCount = allQuestions.filter(function (question) {
+    //     return question.selectedOption !== '';
+    // }).length;
+
+    let attemptedCount = 0;
+    let i = 0;
+
+    while (i < allQuestions.length) {
+        if (allQuestions[i].selectedOption !== '') {
+            attemptedCount += 1;
+        }
+        i += 1;
+    }
+    console.log(attemptedCount)
     const unattemptedCount = allQuestions.length - attemptedCount;
+
+    function getOriginalIndex(id) {
+        let i = 0;
+        while (i < allQuestions.length) {
+            if (allQuestions[i].id === id) {
+                return i;
+            }
+            i += 1;
+        }
+        console.log(i)
+    }
+
 
     return (
         <div className='mainPage'>
@@ -68,30 +91,28 @@ const Page = () => {
                                 <Timer />
                                 <Filter
                                     setQuestions={setQuestions}
-                                    allQuestions={questions}
+                                    allQuestions={allQuestions}
                                     setCurrentPage={setCurrentPage}
                                     attemptedCount={attemptedCount}
                                     unattemptedCount={unattemptedCount}
                                 />
-                                <FilterModal
-                                />
+                                <FilterModal />
                             </div>
                         </div>
                         <div className='mainQuestionDiv'>
                             {currentQuestions.map((questionObj, index) => {
-                                const originalIndex = allQuestions.findIndex(function (q) {
-                                    return q.id === questionObj.id;
-                                });
+                                const originalIndex = getOriginalIndex(questionObj.id);
                                 return (
                                     <Question
                                         key={index}
-                                        questionBoj={questionObj}
+                                        questionObj={questionObj}
                                         index={originalIndex}
                                         onAttempt={handleAttempt}
                                     />
                                 );
                             })}
                         </div>
+
                     </div>
                 </div>
             </div>

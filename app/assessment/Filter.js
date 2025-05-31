@@ -12,55 +12,69 @@ const Filter = ({
     const [activeScoreButton, setActiveScoreButton] = useState("All");
     const [activeAttemptedButton, setActiveAttemptedButton] = useState("All");
 
-    const getDifficulty = (score) => {
-        if (score === "All") return "All";
-        if (score === 10) return "easy";
-        if (score === 15) return "medium";
-        if (score === 20) return "hard";
-    };
+    function getDifficulty(score) {
+        if (score === "All") {
+            setQuestions(allQuestions);
+        }
+        if (score === 10) {
+            return "easy";
+        }
+        if (score === 15) {
+            return "medium";
+        }
+        if (score === 20) {
+            return "hard";
+        }
+    }
 
-
-    const applyCombinedFilter = (status, score) => {
-        let filtered = [...allQuestions];
+    function combineBothFilter(status, score) {
+        let filtered = allQuestions;
 
         if (status === "Attempted") {
-            filtered = filtered.filter((q) => q.selectedOption);
+            filtered = filtered.filter(function (question) {
+                return question.selectedOption;
+            });
         }
-        else if (status === "Unattempted") {
-            filtered = filtered.filter((q) => !q.selectedOption);
+        if (status === "Unattempted") {
+            filtered = filtered.filter(function (question) {
+                return !question.selectedOption;
+            });
         }
 
         if (score !== "All") {
             const difficulty = getDifficulty(score);
-            filtered = filtered.filter((q) => q.difficulty === difficulty);
+            filtered = filtered.filter(function (question) {
+                return question.difficulty === difficulty;
+            });
         }
 
         setQuestions(filtered);
-    };
+    }
 
-    const handleFilter = (score) => {
+    function handleFilter(score) {
         setCurrentPage(1);
         setActiveScoreButton(score);
-        applyCombinedFilter(activeAttemptedButton, score);
-    };
+        combineBothFilter(activeAttemptedButton, score);
+    }
 
-    const handleAttemptAllFilter = () => {
+    function handleAttemptAllFilter() {
         setCurrentPage(1);
         setActiveAttemptedButton("All");
-        applyCombinedFilter("All", activeScoreButton);
-    };
+        combineBothFilter("All", activeScoreButton);
+    }
 
-    const handleAttemptedFilter = () => {
+    function handleAttemptedFilter() {
         setCurrentPage(1);
         setActiveAttemptedButton("Attempted");
-        applyCombinedFilter("Attempted", activeScoreButton);
-    };
+        combineBothFilter("Attempted", activeScoreButton);
+    }
 
-    const handleUnattemptedFilter = () => {
+    function handleUnattemptedFilter() {
         setCurrentPage(1);
         setActiveAttemptedButton("Unattempted");
-        applyCombinedFilter("Unattempted", activeScoreButton);
-    };
+        combineBothFilter("Unattempted", activeScoreButton);
+    }
+
 
     return (
         <div className="filterMainDiv">
