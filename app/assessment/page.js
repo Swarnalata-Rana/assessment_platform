@@ -34,44 +34,63 @@ const Page = () => {
     const currentQuestions = questions.slice(startIndex, startIndex + 5);
     const totalPages = Math.ceil(questions.length / 5);
 
-    const handleAttempt = (questionId, selectedOption) => {
-        const updatedAllQuestions = allQuestions.map((question) => {
+    function handleAttempt(questionId, selectedOption) {
+        const updatedAllQuestions = allQuestions.map(function (question) {
             if (question.id === questionId) {
                 return { ...question, selectedOption };
             }
-            else {
-                return question;
-            }
+            return question;
         });
         setAllQuestions(updatedAllQuestions);
-        setQuestions(updatedAllQuestions);
-    };
 
-    // const attemptedCount = allQuestions.filter(function (question) {
-    //     return question.selectedOption !== '';
-    // }).length;
-
-    let attemptedCount = 0;
-    let i = 0;
-
-    while (i < allQuestions.length) {
-        if (allQuestions[i].selectedOption !== '') {
-            attemptedCount += 1;
-        }
-        i += 1;
+        const updatedQuestions = questions.map(function (question) {
+            if (question.id === questionId) {
+                return { ...question, selectedOption };
+            }
+            return question;
+        });
+        setQuestions(updatedQuestions);
     }
-    console.log(attemptedCount)
+
+    const attemptedCount = allQuestions.filter(function (question) {
+        return question.selectedOption !== '';
+    }).length;
     const unattemptedCount = allQuestions.length - attemptedCount;
 
     function getOriginalIndex(id) {
-        let i = 0;
-        while (i < allQuestions.length) {
-            if (allQuestions[i].id === id) {
-                return i;
+        const indexNum = allQuestions.findIndex(function (question) {
+            return question.id === id;
+        });
+        return indexNum;
+    }
+
+    function handleSubmit() {
+        let correctCount = 0;
+        let wrongCount = 0;
+        let score = 0;
+
+        questions.forEach(function (question) {
+            if (question.selectedOption) {
+                if (question.selectedOption === question.correctAnswer) {
+                    correctCount++;
+                    if (question.difficulty === "easy") {
+                        score += 10;
+                    }
+                    if (question.difficulty === "medium") {
+                        score += 15;
+                    }
+                    if (question.difficulty === "hard") {
+                        score += 20;
+                    }
+                } else {
+                    wrongCount++;
+                }
             }
-            i += 1;
-        }
-        console.log(i)
+        });
+
+        alert(
+            `Score: ${score} / ${attemptedCount}\nUnattempted: ${unattemptedCount}\nCorrect: ${correctCount}\nIncorrect: ${wrongCount}`
+        );
     }
 
 
@@ -81,7 +100,7 @@ const Page = () => {
                 setCurrentPage={setCurrentPage}
                 totalPages={totalPages}
                 currentPage={currentPage}
-            // onSubmit={handleSubmit}
+                onSubmit={handleSubmit}
             />
             <div className='mainwidthBgcolor'>
                 <div className='secondPageMainDiv'>

@@ -13,9 +13,9 @@ const Filter = ({
     const [activeAttemptedButton, setActiveAttemptedButton] = useState("All");
 
     function getDifficulty(score) {
-        if (score === "All") {
-            setQuestions(allQuestions);
-        }
+        // if (score === "All") {
+        //     setQuestions(allQuestions);
+        // }
         if (score === 10) {
             return "easy";
         }
@@ -51,30 +51,17 @@ const Filter = ({
         setQuestions(filtered);
     }
 
-    function handleFilter(score) {
+    function handleScoreFilter(score) {
         setCurrentPage(1);
         setActiveScoreButton(score);
         combineBothFilter(activeAttemptedButton, score);
     }
 
-    function handleAttemptAllFilter() {
+    function handleAttemptFilter(status) {
         setCurrentPage(1);
-        setActiveAttemptedButton("All");
-        combineBothFilter("All", activeScoreButton);
+        setActiveAttemptedButton(status);
+        combineBothFilter(status, activeScoreButton);
     }
-
-    function handleAttemptedFilter() {
-        setCurrentPage(1);
-        setActiveAttemptedButton("Attempted");
-        combineBothFilter("Attempted", activeScoreButton);
-    }
-
-    function handleUnattemptedFilter() {
-        setCurrentPage(1);
-        setActiveAttemptedButton("Unattempted");
-        combineBothFilter("Unattempted", activeScoreButton);
-    }
-
 
     return (
         <div className="filterMainDiv">
@@ -83,25 +70,25 @@ const Filter = ({
 
             <div className="paginationfilterbox">
                 <button
-                    onClick={() => handleFilter("All")}
+                    onClick={() => handleScoreFilter("All")}
                     className={`scoreBtn ${activeScoreButton === "All" ? "activeButton" : ""}`}
                 >
                     All
                 </button>
                 <button
-                    onClick={() => handleFilter(10)}
+                    onClick={() => handleScoreFilter(10)}
                     className={`scoreBtn ${activeScoreButton === 10 ? "activeButton" : ""}`}
                 >
                     10
                 </button>
                 <button
-                    onClick={() => handleFilter(15)}
+                    onClick={() => handleScoreFilter(15)}
                     className={`scoreBtn ${activeScoreButton === 15 ? "activeButton" : ""}`}
                 >
                     15
                 </button>
                 <button
-                    onClick={() => handleFilter(20)}
+                    onClick={() => handleScoreFilter(20)}
                     className={`scoreBtn ${activeScoreButton === 20 ? "activeButton" : ""}`}
                 >
                     20
@@ -115,21 +102,23 @@ const Filter = ({
             <div className="allattemtedDiv">
                 <button
                     className={`questionAttempted ${activeAttemptedButton === "All" ? "activeButton" : ""}`}
-                    onClick={handleAttemptAllFilter}
+                    onClick={() => handleAttemptFilter("All")}
                 >
                     All({allQuestions.length})
                 </button>
+
                 <button
                     className={`questionAttempted ${activeAttemptedButton === "Attempted" ? "activeButton" : ""}`}
-                    onClick={handleAttemptedFilter}
+                    onClick={() => handleAttemptFilter("Attempted")}
                 >
                     Attempted({attemptedCount})
                 </button>
+
             </div>
 
             <button
                 className={`Unattempted37 ${activeAttemptedButton === "Unattempted" ? "activeButton" : ""}`}
-                onClick={handleUnattemptedFilter}
+                onClick={() => handleAttemptFilter("Unattempted")}
             >
                 Unattempted({unattemptedCount})
             </button>
