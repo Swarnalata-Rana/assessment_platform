@@ -13,9 +13,6 @@ const Filter = ({
     const [activeAttemptedButton, setActiveAttemptedButton] = useState("All");
 
     function getDifficulty(score) {
-        // if (score === "All") {
-        //     setQuestions(allQuestions);
-        // }
         if (score === 10) {
             return "easy";
         }
@@ -47,7 +44,6 @@ const Filter = ({
                 return question.difficulty === difficulty;
             });
         }
-
         setQuestions(filtered);
     }
 

@@ -92,8 +92,6 @@ const Page = () => {
             `Score: ${score} / ${attemptedCount}\nUnattempted: ${unattemptedCount}\nCorrect: ${correctCount}\nIncorrect: ${wrongCount}`
         );
     }
-
-
     return (
         <div className='mainPage'>
             <AssessmentHeader
@@ -107,7 +105,7 @@ const Page = () => {
                     <div className='secondPageMainDiv1'>
                         <div className='medeaQuerryTimerFilterComponent'>
                             <div className='TimerFilterDiv'>
-                                <Timer />
+                                <Timer/>
                                 <Filter
                                     setQuestions={setQuestions}
                                     allQuestions={allQuestions}
@@ -119,17 +117,28 @@ const Page = () => {
                             </div>
                         </div>
                         <div className='mainQuestionDiv'>
-                            {currentQuestions.map((questionObj, index) => {
-                                const originalIndex = getOriginalIndex(questionObj.id);
-                                return (
-                                    <Question
-                                        key={index}
-                                        questionObj={questionObj}
-                                        index={originalIndex}
-                                        onAttempt={handleAttempt}
-                                    />
-                                );
-                            })}
+                            {(() => {
+                                if (currentQuestions.length === 0) {
+                                    return (
+                                        <p className='questionNot'>
+                                            Question not available
+                                        </p>
+                                    );
+                                }
+                                else {
+                                    return currentQuestions.map((questionObj, index) => {
+                                        const originalIndex = getOriginalIndex(questionObj.id);
+                                        return (
+                                            <Question
+                                                key={index}
+                                                questionObj={questionObj}
+                                                index={originalIndex}
+                                                onAttempt={handleAttempt}
+                                            />
+                                        );
+                                    });
+                                }
+                            })()}
                         </div>
 
                     </div>
@@ -140,5 +149,4 @@ const Page = () => {
 };
 
 export default Page;
-
 
